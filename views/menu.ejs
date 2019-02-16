@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= header %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1><%= header %></h1>
+    <p>Welcome to <% for(var i=0; i< menu.length; i++){ %>
+      <ul>
+        <li>category : <%= menu[i].category %></li>
+        <li style="color:blueviolet"> Name : <%= menu[i].food_name %> </li>
+        <li style="background-color:coral"> Price <%= menu[i].food_price %> </li>
+      </ul>
+    <% } %></p>
+  </body>
+</html>
