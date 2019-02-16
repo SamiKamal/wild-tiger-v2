@@ -556,8 +556,6 @@ footer p {
       display: inline-block;
       margin-top: 20em;
   }
-  .header-top nav{
-  }
 
   .nav-open{
       -webkit-clip-path: circle(150% at top right) !important;
