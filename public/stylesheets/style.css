@@ -447,3 +447,391 @@ footer p {
   margin-top: 30px;
 }
 
+/*
+  ###############################################
+    ###############################################
+                    MEDIA QUERIES
+      ###############################################
+  ###############################################
+
+
+*/
+
+
+
+@media only screen and (min-width: 2250px){
+  .bar-section{
+      height: 110vh;
+  }
+  header{
+      height: 100vh;
+  }
+
+  .about-us-text{
+      width: 40%;
+      margin-left: 10%;
+  }
+
+  .where-to--hours--location{
+      margin-left: 370px
+  }
+
+
+}
+
+@media only screen and (min-width: 2050px){
+  header{
+      height: 131vh;
+  }
+
+  .where-to--hours{
+      max-width: 60%;
+      margin-right: 20px
+  }
+  
+}
+
+@media only screen and (max-width: 1575px){
+  .where-to--hours{
+      margin-right: 20px;
+  }
+}
+
+
+@media only screen and (max-width: 1203px){
+  html{font-size: 14px}
+  .bar-section{
+      height: 65vh;
+  }
+  .disapper-2-mobile{
+      display: none;
+  }
+
+  .text-bar{
+      margin-top: 15em;
+  }
+
+  .hero-text{
+      margin-top: 15em;
+  }
+
+}
+
+@media only screen and (max-width: 1052px){
+  html{font-size: 12px}
+
+  .bar-section{
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+  }
+  .text-bar{
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      justify-items: center;
+      margin-top: 10em;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+  }
+  .text-bar h2::after{
+      display: block;
+  }
+
+  
+}
+
+@media only screen and (max-width: 975px){
+  .where-to--hours--location{
+      margin-left: 200px;
+  }
+  
+
+  .hero-text{
+      display: inline-block;
+      margin-top: 20em;
+  }
+  .header-top nav{
+  }
+
+  .nav-open{
+      -webkit-clip-path: circle(150% at top right) !important;
+              clip-path: circle(150% at top right) !important;
+
+  }
+  .header-top nav ul{
+      margin-top: 5em;
+      display: inline-block;
+      position: absolute;
+      right: 0;
+      background-color: #ffffff;
+      -webkit-clip-path: circle(0px at top right);
+              clip-path: circle(0px at top right);
+      -webkit-transition: all ease-in-out .75s;
+      transition: all ease-in-out .75s;
+
+  }
+
+  .header-top nav li{
+      margin-top: 0;
+      display: block;
+      border-bottom: 1px solid #EF5411;
+      
+  }
+  .header-top nav li a{
+      color: #EF5411;
+      display: block;
+      padding: 1em 1.9em;
+  }
+  .header-top nav li a:hover,
+  .header-top nav li a:focus{
+      background-color: #EF5411;
+      color: #ffffff;
+  }
+
+  .wild-tiger-logo, .wild-logo-li{
+      display: none !important;
+  }
+
+  .menu-toggle{
+      padding: 1em;
+      position: absolute;
+      right: 1em;
+      top: 10px;
+      cursor: pointer;
+  }
+
+  .hamburgar,
+  .hamburgar::after,
+  .hamburgar::before{
+      content: '';
+      display: block;
+      background: #EF5411;
+      height: 3px;
+      width: 2.75em;
+      border-radius: 3px;
+      -webkit-transition: all ease-in-out 0.75s;
+      transition: all ease-in-out 0.75s
+  }
+
+  .hamburgar::before{
+      -webkit-transform: translateY(-8px);
+              transform: translateY(-8px);
+
+  }
+  .hamburgar::after{
+      -webkit-transform: translateY(5px);
+              transform: translateY(5px);
+
+  }
+
+  .menu-toggle--open .hamburgar{
+      -webkit-transform: rotate(45deg);
+              transform: rotate(45deg)
+
+  }
+
+  .menu-toggle--open .hamburgar::before{
+      opacity: 0;
+
+  }
+
+  .menu-toggle--open .hamburgar::after{
+      -webkit-transform: translateY(-3px) rotate(-90deg);
+              transform: translateY(-3px) rotate(-90deg);
+
+  }
+
+
+  .logo-mobile{
+      display: inline-block;
+      width: 300px;
+      height: auto;
+  }
+
+  .logo-mobile img{
+      width: 100%;
+      margin-top: 10px;
+      margin-left: 50px
+  }
+
+
+
+}
+
+
+@media only screen and (max-width: 940px){
+
+  html{font-size: 10px;}
+  h2::after{
+      width: 150px
+  }
+
+  .about-us-text{
+      margin-top: 30px;
+  }
+
+}
+
+
+@media only screen and (max-width: 773px){
+  h2::after{
+      width: 120px;
+      height: 4px;
+  }
+
+  .where-to--head-text{
+      margin-right: 28em;
+      margin-bottom: 8em;
+  }
+  .where-to--section{
+      background-image: url(../images/Location-image-2.jpg);
+      background-size: cover;
+      height: auto;
+      display: block;
+  }
+
+  .hours-ul{
+      margin-top: 180px;
+      margin-bottom: 30px;
+  }
+
+
+
+}
+
+
+@media only screen and (max-width: 760px){
+
+  .about-us-text span{
+      display: none;
+  }
+
+}
+
+
+@media only screen and (max-width:660px){
+  .hero-text{
+      margin-left: 30px;
+  }
+  
+  h2::after{
+      height: 3px;
+  }
+  .logo-mobile{
+      margin-left: -30px;
+  }
+
+  footer{
+      text-align: center;
+      padding: 80px
+  }
+
+  footer ul{
+      margin-top: 30px;
+  }
+  .footer-nav{
+      margin: 0 auto;
+      width: 100%;
+  }
+  .social-links{
+      margin: 20px auto;
+  }
+  footer p {
+      margin-top: 120px;
+  }
+}
+
+@media only screen and (max-width:576px){
+  .meals{
+      margin-top: 0px;
+  }
+
+  .about-us-text{
+      font-size: 0.5px;
+  }
+
+}
+
+@media only screen and (max-width:560px){
+  .hero-text{
+      margin-left: 15px;
+  }
+
+  .logo-mobile{
+      margin-left: -45px;
+  }
+}
+
+@media only screen and (max-width:500px){
+  html{font-size: 8px;}
+
+  .btn-orange{
+      padding: 20px 40px;
+      font-size: 1.7rem;
+  }
+
+  .logo-mobile{
+      width: 200px;
+  }
+
+  .about-us{
+      margin-bottom: 20px;
+  }
+  .meals{
+      display: none;
+  }
+
+  .where-to--location{
+      font-size: 2rem;
+  }
+
+}
+
+@media only screen and (max-width:430px) {
+
+  .where-to--hours--location{
+      margin-left: 80px
+  }
+
+  .where-to--main{
+      margin-left: 15px;
+  }
+  .where-to--hours--location::before{
+      margin-right: 0px;
+      margin-left: -65px
+  }
+
+  .footer-nav{
+      width: 100%;
+  }
+
+  .footer-nav li{
+      padding-top: 10px;
+  }
+  .social-links li{
+      padding-top: 10px;
+  }
+  h2::after{
+      width: 100px;
+  }
+  .about-us-img img{
+      height: 100%; 
+  }
+  .about-us-text h2{
+      font-size: 3.5rem;
+  }
+
+}
+
+
+@media only screen and (max-height: 630px){
+  .text-bar{
+      margin-top: 5em;
+  }
+}
