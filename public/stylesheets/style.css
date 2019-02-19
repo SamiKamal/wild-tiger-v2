@@ -491,6 +491,10 @@ footer p {
 
 }
 
+.menus-section h2{
+    text-transform: uppercase;
+}
+
 .grid{
     display: grid;
     grid-template-columns: 500px 500px;
@@ -507,7 +511,7 @@ footer p {
     text-align: center;
 }
 .menus-section h2::after{
-    width: 170px;
+    width: 150px;
 }
 .food_menu ul{
     max-width: 460px;
@@ -538,6 +542,14 @@ footer p {
     max-width: 350px;
     min-width: 350px;
     font-weight: 300;
+}
+
+.food_details{
+    text-align: center;
+}
+
+.food_details p{
+    line-height: 1.5;
 }
 /*
   ###############################################

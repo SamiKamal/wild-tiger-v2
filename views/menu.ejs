@@ -13,7 +13,7 @@
     </div>
 
     <section class="menus-section">
-      <h2>APPEITZERS</h2>
+      <h2>Appeitzers</h2>
     <div class="grid">
       <% for(var i=0; i<menu.length; i++){ %>
           <%if(menu[i].category === 'APPEITZERS'){%>
@@ -27,6 +27,27 @@
   
     </div>      
     </section>
+
+    <section class="menus-section">
+      <div class="food_details">
+        <h2>Soup</h2>
+        <p>Your choice of Chicken, Tofu or  Vegetables $8.95,<br>  Beef or Pork   $10,<br>
+            Shrimp   $12,  Seafood   $ 14</p>
+          </div>
+      <div class="grid">
+        <% for(var i=0; i<menu.length; i++){ %>
+            <%if(menu[i].category === 'SOUP'){%>
+              <div class="col span-1-of-2 food_menu">
+                 <p class="food_name"><%= menu[i].food_name %></p>
+                  <p class="food_desc"><%= menu[i].food_desc %></p>
+                  <p class="food_price"><%= menu[i].food_price %></p>
+                </div>
+                  <% } %>
+          <%}%>
+    
+      </div>      
+      </section>
+  
     
     <!--
     <p>Welcome to <% for(var i=0; i< menu.length; i++){ %>
