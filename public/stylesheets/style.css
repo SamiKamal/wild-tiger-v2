@@ -551,6 +551,15 @@ footer p {
 .food_details p{
     line-height: 1.5;
 }
+
+.hot-lvl{
+    text-align: center;
+    margin-top: 40px;
+    font-weight: 600;
+}
+.hot-lvl span{
+    color: rgb(255, 0, 8);
+}
 /*
   ###############################################
     ###############################################
