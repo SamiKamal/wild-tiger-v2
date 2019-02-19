@@ -456,7 +456,89 @@ footer p {
   text-align: center;
   margin-top: 30px;
 }
+/*
+  ###############################################
+    ###############################################
+                    Home Page
+      ###############################################
+  ###############################################
 
+
+*/
+.img-menu{
+    position: relative;
+}
+.img-menu img{
+    width: 100%;
+    height: auto;
+}
+.text-block{
+    position: absolute;
+    top: 35%;
+    left: 35%;
+    background-color: white;
+    padding: 20px 25px;
+    text-transform: uppercase;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=6, Direction=0, Color=#000000)";/*IE 8*/
+    text-shadow: 0 3px 6px rgba(0,0,0,0.2);/* FF3.5+, Opera 9+, Saf1+, Chrome, IE10 */
+    filter: progid:DXImageTransform.Microsoft.Shadow(Strength=6, Direction=135, Color=#000000); /*IE 5.5-7*/
+
+}
+
+
+.menus-section{
+    margin-top: 5em;
+
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 500px 500px;
+    grid-template-rows: auto;
+    grid-row-gap: 60px;
+    justify-content: space-between;
+}
+
+.food_menu{
+    margin-left: 15.6%;
+}
+.menus-section h2{
+    font-size: 2.8rem;
+    text-align: center;
+}
+.menus-section h2::after{
+    width: 170px;
+}
+.food_menu ul{
+    max-width: 460px;
+}
+.food_menu ul li{
+    display: inline-block;
+    list-style: none;
+}
+.food_name{
+    display: inline-block;
+    color: #EF5411;
+    font-size: 1.5rem;
+    margin-bottom: 7px;
+    margin-right: 8em;
+}
+
+.food_price{
+    display: inline-block;
+    font-size: 1.5rem;
+    min-width: 70px;
+    margin-top: 20px;
+    font-weight: 300;
+
+}
+
+.food_desc{
+    margin-top: 5px;
+    max-width: 350px;
+    min-width: 350px;
+    font-weight: 300;
+}
 /*
   ###############################################
     ###############################################

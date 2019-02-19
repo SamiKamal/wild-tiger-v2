@@ -3,7 +3,6 @@ var router = express.Router();
 var Menu = require('../models/menu')
 var assert = require('assert')
 var mongoose = require('mongoose');
-var connection = mongoose.connection;
 
 var menusJSON, MenuJsoon
 /* GET home page. */
