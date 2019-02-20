@@ -173,6 +173,25 @@
                     </div>      
                     </section>
 
+                    <section class="menus-section">
+                        <div class="food_details">
+                            <h2>Specials</h2>
+                            <p>​Served with steamed rice. Substitute brown rice add $1 </p>
+                              </div>
+                        <div class="grid">
+                        <% for(var i=0; i<menu.length; i++){ %>
+                            <%if(menu[i].category === 'SPECIALS'){%>
+                              <div class="col span-1-of-2 food_menu">
+                                 <p class="food_name"><%= menu[i].food_name %></p>
+                                  <p class="food_desc"><%= menu[i].food_desc %></p>
+                                  <p class="food_price"><%= menu[i].food_price %></p>
+                                </div>
+                                  <% } %>
+                          <%}%>
+                    
+                      </div>      
+                      </section>
+  
         
     <!--
     <p>Welcome to <% for(var i=0; i< menu.length; i++){ %>
