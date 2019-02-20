@@ -200,7 +200,7 @@
                                 <div class="col span-1-of-2 food_menu">
                                    <p class="food_name"><%= menu[i].food_name %></p>
                                     <p class="food_desc"><%= menu[i].food_desc %></p>
-                                    <p class="food_price">$<%= menu[i].food_price %></p>
+                                    <p class="food_price"><%= menu[i].food_price %></p>
                                   </div>
                                     <% } %>
                             <%}%>
@@ -247,6 +247,23 @@
                         
                               </div>
                               </section>
+
+                              <section class="menus-section">
+                                  <h2>Beer (Bottle)</h2>
+                                <div class="grid">
+                                  <% for(var i=0; i<menu.length; i++){ %>
+                                      <%if(menu[i].category === 'Beer (Bottle)'){%>
+                                        <div class="col span-1-of-2 food_menu">
+                                           <p class="food_name"><%= menu[i].food_name %></p>
+                                            <p class="food_desc"><%= menu[i].food_desc %></p>
+                                            <p class="food_price"><%= menu[i].food_price %></p>
+                                          </div>
+                                            <% } %>
+                                    <%}%>
+                          
+                                </div>
+                                </section>
+  
   
         
         
