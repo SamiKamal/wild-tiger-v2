@@ -1,329 +1,417 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title><%= header %></title>
-    <link rel='stylesheet' href='/stylesheets/menu.css' />
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-    <script src="https://unpkg.com/ionicons@4.5.5/dist/ionicons.js"></script>
-  </head>
-  <body>
-    <div class="container img-menu">
-      <img src="/images/Menu-image.jpg" alt="">
-      <div class="text-block">
-        <h1>Lunch/dinner</h1>
-      </div>
-    </div>
 
-    <section class="menus-section">
-      <h2>Appeitzers</h2>
+<head>
+  <title>
+    <%= header %>
+  </title>
+  <link rel='stylesheet' href='/stylesheets/menu.css' />
+  <link rel='stylesheet' href='/stylesheets/style.css' />
+  <script src="https://unpkg.com/ionicons@4.5.5/dist/ionicons.js"></script>
+</head>
+
+<body>
+  <div class="container img-menu">
+    <img src="/images/Menu-image.jpg" alt="">
+    <div class="text-block">
+      <h1>Lunch/dinner</h1>
+    </div>
+  </div>
+
+  <section class="menus-section">
+    <h2>Appeitzers</h2>
     <div class="grid">
       <% for(var i=0; i<menu.length; i++){ %>
-          <%if(menu[i].category === 'APPEITZERS'){%>
-            <div class="col span-1-of-2 food_menu">
-               <p class="food_name"><%= menu[i].food_name %></p>
-                <p class="food_desc"><%= menu[i].food_desc %></p>
-                <p class="food_price">$<%= menu[i].food_price %></p>
-              </div>
-                <% } %>
+      <%if(menu[i].category === 'APPEITZERS'){%>
+      <div class="col span-1-of-2 food_menu">
+        <p class="food_name">
+          <%= menu[i].food_name %>
+        </p>
+        <p class="food_desc">
+          <%= menu[i].food_desc %>
+        </p>
+        <p class="food_price">$
+          <%= menu[i].food_price %>
+        </p>
+      </div>
+      <% } %>
+      <%}%>
+
+    </div>
+  </section>
+
+  <section class="menus-section">
+    <div class="food_details">
+      <h2>Soup</h2>
+      <p>Your choice of Chicken, Tofu or Vegetables $8.95,<br> Beef or Pork $10,<br>
+        Shrimp $12, Seafood $ 14</p>
+    </div>
+    <div class="grid">
+      <% for(var i=0; i<menu.length; i++){ %>
+      <%if(menu[i].category === 'SOUP'){%>
+      <div class="col span-1-of-2 food_menu">
+        <p class="food_name">
+          <%= menu[i].food_name %>
+        </p>
+        <p class="food_desc">
+          <%= menu[i].food_desc %>
+        </p>
+        <p class="food_price">
+          <%= menu[i].food_price %>
+        </p>
+      </div>
+      <% } %>
+      <%}%>
+
+    </div>
+    <p class="hot-lvl">Spice level : *mild, **medium, ***hot, <span> ****very hot</span></p>
+
+  </section>
+
+  <section class="menus-section">
+    <h2>Salad</h2>
+    <div class="grid">
+      <% for(var i=0; i<menu.length; i++){ %>
+      <%if(menu[i].category === 'SALAD'){%>
+      <div class="col span-1-of-2 food_menu">
+        <p class="food_name">
+          <%= menu[i].food_name %>
+        </p>
+        <p class="food_desc">
+          <%= menu[i].food_desc %>
+        </p>
+        <p class="food_price">$
+          <%= menu[i].food_price %>
+        </p>
+      </div>
+      <% } %>
+      <%}%>
+
+    </div>
+  </section>
+
+  <section class="menus-section">
+    <div class="food_details">
+      <h2>Stir-Fried</h2>
+      <p>​Served with steamed rice. <br>
+        ​Substitute brown rice add $1 <br>
+        Choice of Chicken, Tofu, Vegetable $11, Beef or Pork $12, <br>
+        Shrimp $14, Seafood $16
+      </p>
+    </div>
+    <div class="grid">
+      <% for(var i=0; i<menu.length; i++){ %>
+      <%if(menu[i].category === 'STIR-FRIED'){%>
+      <div class="col span-1-of-2 food_menu">
+        <p class="food_name">
+          <%= menu[i].food_name %>
+        </p>
+        <p class="food_desc">
+          <%= menu[i].food_desc %>
+        </p>
+        <p class="food_price">
+          <%= menu[i].food_price %>
+        </p>
+      </div>
+      <% } %>
+      <%}%>
+
+    </div>
+  </section>
+
+  <section class="menus-section">
+    <div class="food_details">
+      <h2>Noodles</h2>
+      <p>​Choice of Chicken, Tofu, Vegetable $11, Beef or Pork $12, <br>
+        Shrimp $14, Seafood $16
+
+      </p>
+    </div>
+    <div class="grid">
+      <% for(var i=0; i<menu.length; i++){ %>
+      <%if(menu[i].category === 'NOODLES'){%>
+      <div class="col span-1-of-2 food_menu">
+        <p class="food_name">
+          <%= menu[i].food_name %>
+        </p>
+        <p class="food_desc">
+          <%= menu[i].food_desc %>
+        </p>
+        <p class="food_price">
+          <%= menu[i].food_price %>
+        </p>
+      </div>
+      <% } %>
+      <%}%>
+
+    </div>
+  </section>
+
+  <section class="menus-section">
+    <h2>Noodle Soup</h2>
+    <div class="grid">
+      <% for(var i=0; i<menu.length; i++){ %>
+      <%if(menu[i].category === 'NOODLES-SOUP'){%>
+      <div class="col span-1-of-2 food_menu">
+        <p class="food_name">
+          <%= menu[i].food_name %>
+        </p>
+        <p class="food_desc">
+          <%= menu[i].food_desc %>
+        </p>
+        <p class="food_price">
+          <%= menu[i].food_price %>
+        </p>
+      </div>
+      <% } %>
+      <%}%>
+
+    </div>
+    <p class="hot-lvl">Spice level : *mild, **medium, ***hot, <span> ****very hot</span></p>
+
+
+    <section class="menus-section">
+      <div class="food_details">
+        <h2>Curries</h2>
+        <p>​Served with steamed rice. <br>
+          ​Substitute brown rice add $1 <br>
+          Choice of Chicken, Tofu, Vegetable $11, Beef or Pork $12, <br>
+          Shrimp $14, Seafood $16
+        </p>
+      </div>
+      <div class="grid">
+        <% for(var i=0; i<menu.length; i++){ %>
+        <%if(menu[i].category === 'CURRIES'){%>
+        <div class="col span-1-of-2 food_menu">
+          <p class="food_name">
+            <%= menu[i].food_name %>
+          </p>
+          <p class="food_desc">
+            <%= menu[i].food_desc %>
+          </p>
+          <p class="food_price">
+            <%= menu[i].food_price %>
+          </p>
+        </div>
+        <% } %>
         <%}%>
-  
-    </div>      
+
+      </div>
     </section>
 
     <section class="menus-section">
       <div class="food_details">
-        <h2>Soup</h2>
-        <p>Your choice of Chicken, Tofu or  Vegetables $8.95,<br>  Beef or Pork   $10,<br>
-            Shrimp   $12,  Seafood   $ 14</p>
-          </div>
+        <h2>Fried Rice</h2>
+        <p>​Choice of Chicken, Tofu, Vegetable $11, Beef or Pork $12, <br>
+          Shrimp $14, Seafood $16
+
+        </p>
+      </div>
       <div class="grid">
         <% for(var i=0; i<menu.length; i++){ %>
-            <%if(menu[i].category === 'SOUP'){%>
-              <div class="col span-1-of-2 food_menu">
-                 <p class="food_name"><%= menu[i].food_name %></p>
-                  <p class="food_desc"><%= menu[i].food_desc %></p>
-                  <p class="food_price"><%= menu[i].food_price %></p>
-                </div>
-                  <% } %>
-          <%}%>
+        <%if(menu[i].category === 'FRIED-RICE'){%>
+        <div class="col span-1-of-2 food_menu">
+          <p class="food_name">
+            <%= menu[i].food_name %>
+          </p>
+          <p class="food_desc">
+            <%= menu[i].food_desc %>
+          </p>
+          <p class="food_price">
+            <%= menu[i].food_price %>
+          </p>
+        </div>
+        <% } %>
+        <%}%>
 
       </div>
-      <p class="hot-lvl">Spice level  : *mild,  **medium,  ***hot, <span> ****very hot</span></p>
+    </section>
 
-      </section>
-  
-      <section class="menus-section">
-          <h2>Salad</h2>
-        <div class="grid">
-          <% for(var i=0; i<menu.length; i++){ %>
-              <%if(menu[i].category === 'SALAD'){%>
-                <div class="col span-1-of-2 food_menu">
-                   <p class="food_name"><%= menu[i].food_name %></p>
-                    <p class="food_desc"><%= menu[i].food_desc %></p>
-                    <p class="food_price">$<%= menu[i].food_price %></p>
-                  </div>
-                    <% } %>
-            <%}%>
-      
-        </div>      
-        </section>
+    <section class="menus-section">
+      <div class="food_details">
+        <h2>Specials</h2>
+        <p>​Served with steamed rice. Substitute brown rice add $1 </p>
+      </div>
+      <div class="grid">
+        <% for(var i=0; i<menu.length; i++){ %>
+        <%if(menu[i].category === 'SPECIALS'){%>
+        <div class="col span-1-of-2 food_menu">
+          <p class="food_name">
+            <%= menu[i].food_name %>
+          </p>
+          <p class="food_desc">
+            <%= menu[i].food_desc %>
+          </p>
+          <p class="food_price">
+            <%= menu[i].food_price %>
+          </p>
+        </div>
+        <% } %>
+        <%}%>
 
-        <section class="menus-section">
-            <div class="food_details">
-                <h2>Stir-Fried</h2>
-                <p>​Served with steamed rice. <br>   
-                    ​Substitute brown rice add $1 <br>
-                    Choice of Chicken, Tofu,  Vegetable $11,   Beef or Pork $12, <br>
-                    Shrimp $14,  Seafood $16
-                    </p>
-                  </div>
-                  <div class="grid">
-            <% for(var i=0; i<menu.length; i++){ %>
-                <%if(menu[i].category === 'STIR-FRIED'){%>
-                  <div class="col span-1-of-2 food_menu">
-                     <p class="food_name"><%= menu[i].food_name %></p>
-                      <p class="food_desc"><%= menu[i].food_desc %></p>
-                      <p class="food_price"><%= menu[i].food_price %></p>
-                    </div>
-                      <% } %>
-              <%}%>
-        
-          </div>      
-          </section>
+      </div>
+    </section>
 
-          <section class="menus-section">
-              <div class="food_details">
-                  <h2>Noodles</h2>
-                  <p>​Choice of Chicken, Tofu, Vegetable $11, Beef or Pork $12, <br>
-                      Shrimp $14,  Seafood $16
-                      
-                      </p>
-                    </div>
-              <div class="grid">
-              <% for(var i=0; i<menu.length; i++){ %>
-                  <%if(menu[i].category === 'NOODLES'){%>
-                    <div class="col span-1-of-2 food_menu">
-                       <p class="food_name"><%= menu[i].food_name %></p>
-                        <p class="food_desc"><%= menu[i].food_desc %></p>
-                        <p class="food_price"><%= menu[i].food_price %></p>
-                      </div>
-                        <% } %>
-                <%}%>
-          
-            </div>      
-            </section>
-    
-            <section class="menus-section">
-                  <h2>Noodle Soup</h2>
-                <div class="grid">
-                  <% for(var i=0; i<menu.length; i++){ %>
-                      <%if(menu[i].category === 'NOODLES-SOUP'){%>
-                        <div class="col span-1-of-2 food_menu">
-                           <p class="food_name"><%= menu[i].food_name %></p>
-                            <p class="food_desc"><%= menu[i].food_desc %></p>
-                            <p class="food_price"><%= menu[i].food_price %></p>
-                          </div>
-                            <% } %>
-                    <%}%>
-          
-                </div>
-                <p class="hot-lvl">Spice level  : *mild,  **medium,  ***hot, <span> ****very hot</span></p>
+    <section class="menus-section">
+      <h2>Side</h2>
+      <div class="grid">
+        <% for(var i=0; i<menu.length; i++){ %>
+        <%if(menu[i].category === 'SIDE'){%>
+        <div class="col span-1-of-2 food_menu">
+          <p class="food_name">
+            <%= menu[i].food_name %>
+          </p>
+          <p class="food_desc">
+            <%= menu[i].food_desc %>
+          </p>
+          <p class="food_price">
+            <%= menu[i].food_price %>
+          </p>
+        </div>
+        <% } %>
+        <%}%>
+
+      </div>
+    </section>
+
+    <div class="container img-menu desserts">
+      <img src="/images/Dessert-image.jpg" alt="">
+      <div class="text-block">
+        <h1>Dessert/Drinks</h1>
+      </div>
+    </div>
 
 
-                <section class="menus-section">
-                    <div class="food_details">
-                        <h2>Curries</h2>
-                        <p>​Served with steamed rice. <br>   
-                            ​Substitute brown rice add $1 <br>
-                            Choice of Chicken, Tofu,  Vegetable $11,   Beef or Pork $12, <br>
-                            Shrimp $14,  Seafood $16
-                            </p>
-                          </div>
-                          <div class="grid">
-                    <% for(var i=0; i<menu.length; i++){ %>
-                        <%if(menu[i].category === 'CURRIES'){%>
-                          <div class="col span-1-of-2 food_menu">
-                             <p class="food_name"><%= menu[i].food_name %></p>
-                              <p class="food_desc"><%= menu[i].food_desc %></p>
-                              <p class="food_price"><%= menu[i].food_price %></p>
-                            </div>
-                              <% } %>
-                      <%}%>
-                
-                  </div>      
-                  </section>
-        
-                  <section class="menus-section">
-                      <div class="food_details">
-                          <h2>Fried Rice</h2>
-                          <p>​Choice of Chicken, Tofu, Vegetable $11, Beef or Pork $12, <br>
-                              Shrimp $14,  Seafood $16
-                              
-                              </p>
-                            </div>
-                      <div class="grid">
-                      <% for(var i=0; i<menu.length; i++){ %>
-                          <%if(menu[i].category === 'FRIED-RICE'){%>
-                            <div class="col span-1-of-2 food_menu">
-                               <p class="food_name"><%= menu[i].food_name %></p>
-                                <p class="food_desc"><%= menu[i].food_desc %></p>
-                                <p class="food_price"><%= menu[i].food_price %></p>
-                              </div>
-                                <% } %>
-                        <%}%>
-                  
-                    </div>      
-                    </section>
+    <section class="menus-section">
+      <h2>Dessert</h2>
+      <div class="grid">
+        <% for(var i=0; i<menu.length; i++){ %>
+        <%if(menu[i].category === 'DESSERT'){%>
+        <div class="col span-1-of-2 food_menu">
+          <p class="food_name">
+            <%= menu[i].food_name %>
+          </p>
+          <p class="food_desc">
+            <%= menu[i].food_desc %>
+          </p>
+          <p class="food_price">$
+            <%= menu[i].food_price %>
+          </p>
+        </div>
+        <% } %>
+        <%}%>
 
-                    <section class="menus-section">
-                        <div class="food_details">
-                            <h2>Specials</h2>
-                            <p>​Served with steamed rice. Substitute brown rice add $1 </p>
-                              </div>
-                        <div class="grid">
-                        <% for(var i=0; i<menu.length; i++){ %>
-                            <%if(menu[i].category === 'SPECIALS'){%>
-                              <div class="col span-1-of-2 food_menu">
-                                 <p class="food_name"><%= menu[i].food_name %></p>
-                                  <p class="food_desc"><%= menu[i].food_desc %></p>
-                                  <p class="food_price"><%= menu[i].food_price %></p>
-                                </div>
-                                  <% } %>
-                          <%}%>
-                    
-                      </div>      
-                      </section>
+      </div>
+    </section>
 
-                      <section class="menus-section">
-                          <h2>Side</h2>
-                        <div class="grid">
-                          <% for(var i=0; i<menu.length; i++){ %>
-                              <%if(menu[i].category === 'SIDE'){%>
-                                <div class="col span-1-of-2 food_menu">
-                                   <p class="food_name"><%= menu[i].food_name %></p>
-                                    <p class="food_desc"><%= menu[i].food_desc %></p>
-                                    <p class="food_price"><%= menu[i].food_price %></p>
-                                  </div>
-                                    <% } %>
-                            <%}%>
-                  
-                        </div>
-                        </section>
+    <section class="menus-section">
+      <h2>Drinks</h2>
+      <div class="grid">
+        <% for(var i=0; i<menu.length; i++){ %>
+        <%if(menu[i].category === 'DRINKS'){%>
+        <div class="col span-1-of-2 food_menu">
+          <p class="food_name">
+            <%= menu[i].food_name %>
+          </p>
+          <p class="food_desc">
+            <%= menu[i].food_desc %>
+          </p>
+          <p class="food_price">$
+            <%= menu[i].food_price %>
+          </p>
+        </div>
+        <% } %>
+        <%}%>
 
-                        <div class="container img-menu desserts">
-                            <img src="/images/Dessert-image.jpg" alt="">
-                            <div class="text-block">
-                              <h1>Dessert/Drinks</h1>
-                            </div>
-                          </div>
+      </div>
+    </section>
 
-                          
-                          <section class="menus-section">
-                              <h2>Dessert</h2>
-                            <div class="grid">
-                              <% for(var i=0; i<menu.length; i++){ %>
-                                  <%if(menu[i].category === 'DESSERT'){%>
-                                    <div class="col span-1-of-2 food_menu">
-                                       <p class="food_name"><%= menu[i].food_name %></p>
-                                        <p class="food_desc"><%= menu[i].food_desc %></p>
-                                        <p class="food_price">$<%= menu[i].food_price %></p>
-                                      </div>
-                                        <% } %>
-                                <%}%>
-                      
-                            </div>
-                            </section>
+    <section class="menus-section">
+      <h2>Beer (Bottle)</h2>
+      <div class="grid">
+        <% for(var i=0; i<menu.length; i++){ %>
+        <%if(menu[i].category === 'Beer (Bottle)'){%>
+        <div class="col span-1-of-2 food_menu">
+          <p class="food_name">
+            <%= menu[i].food_name %>
+          </p>
+          <p class="food_desc">
+            <%= menu[i].food_desc %>
+          </p>
+          <p class="food_price">
+            <%= menu[i].food_price %>
+          </p>
+        </div>
+        <% } %>
+        <%}%>
 
-                            <section class="menus-section">
-                                <h2>Drinks</h2>
-                              <div class="grid">
-                                <% for(var i=0; i<menu.length; i++){ %>
-                                    <%if(menu[i].category === 'DRINKS'){%>
-                                      <div class="col span-1-of-2 food_menu">
-                                         <p class="food_name"><%= menu[i].food_name %></p>
-                                          <p class="food_desc"><%= menu[i].food_desc %></p>
-                                          <p class="food_price">$<%= menu[i].food_price %></p>
-                                        </div>
-                                          <% } %>
-                                  <%}%>
-                        
-                              </div>
-                              </section>
+      </div>
+    </section>
 
-                              <section class="menus-section">
-                                  <h2>Beer (Bottle)</h2>
-                                <div class="grid">
-                                  <% for(var i=0; i<menu.length; i++){ %>
-                                      <%if(menu[i].category === 'Beer (Bottle)'){%>
-                                        <div class="col span-1-of-2 food_menu">
-                                           <p class="food_name"><%= menu[i].food_name %></p>
-                                            <p class="food_desc"><%= menu[i].food_desc %></p>
-                                            <p class="food_price"><%= menu[i].food_price %></p>
-                                          </div>
-                                            <% } %>
-                                    <%}%>
-                          
-                                </div>
-                                </section>
+    <section class="menus-section">
+      <div class="food_details">
+        <h2>Wine</h2>
+        <p>​ All house wine $6 <br>
+          Chardonnay, Cabernet Sauvignon, Merot, Resling
+        </p>
+      </div>
+      <div class="grid">
+        <% for(var i=0; i<menu.length; i++){ %>
+        <%if(menu[i].category === 'WINE'){%>
+        <div class="col span-1-of-2 food_menu">
+          <p class="food_name">
+            <%= menu[i].food_name %>
+          </p>
+          <p class="food_desc">
+            <%= menu[i].food_desc %>
+          </p>
+          <p class="food_price">$
+            <%= menu[i].food_price %>
+          </p>
+        </div>
+        <% } %>
+        <%}%>
 
-                                <section class="menus-section">
-                                    <div class="food_details">
-                                        <h2>Wine</h2>
-                                        <p>​ All house wine $6 <br>
-                                            Chardonnay, Cabernet Sauvignon, Merot, Resling                                            
-                                            </p>
-                                          </div>
-                                                  <div class="grid">
-                                    <% for(var i=0; i<menu.length; i++){ %>
-                                        <%if(menu[i].category === 'WINE'){%>
-                                          <div class="col span-1-of-2 food_menu">
-                                             <p class="food_name"><%= menu[i].food_name %></p>
-                                              <p class="food_desc"><%= menu[i].food_desc %></p>
-                                              <p class="food_price">$<%= menu[i].food_price %></p>
-                                            </div>
-                                              <% } %>
-                                      <%}%>
-                            
-                                  </div>
-                                  </section>
+      </div>
+    </section>
     <!-- FOOTER -->
     <footer>
-        <div class="row">
-          <div class="col span-1-of-2">
-            <ul class="footer-nav">
-              <li><a href="#">Home</a></li>
-              <li><a href="#">Menu</a></li>
-              <li><a href="#">Bar</a></li>
-              <li><a href="#">Where To Find Us?</a></li>
-            </ul>
-          </div>
-    
-          <div class="col span-1-of-2">
-            <ul class="social-links">
-              <li><a href="https://www.facebook.com" target="_blank">
-                  <ion-icon name="logo-facebook"></ion-icon>
-                </a></li>
-              <li><a href="#">
-                  <ion-icon name="logo-twitter"></ion-icon>
-                </a></li>
-              <li><a href="#">
-                  <ion-icon name="logo-googleplus"></ion-icon>
-                </a></li>
-              <li><a href="#">
-                  <ion-icon name="logo-instagram"></ion-icon>
-                </a></li>
-            </ul>
-          </div>
+      <div class="row">
+        <div class="col span-1-of-2">
+          <ul class="footer-nav">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Menu</a></li>
+            <li><a href="#">Bar</a></li>
+            <li><a href="#">Where To Find Us?</a></li>
+          </ul>
         </div>
-        <div class="row">
-          <p>Copyright &copy; 2018 by Wild Tiger. All rights reserved.</p>
+
+        <div class="col span-1-of-2">
+          <ul class="social-links">
+            <li><a href="https://www.facebook.com" target="_blank">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a></li>
+            <li><a href="#">
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a></li>
+            <li><a href="#">
+                <ion-icon name="logo-googleplus"></ion-icon>
+              </a></li>
+            <li><a href="#">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a></li>
+          </ul>
         </div>
-      </footer>
-  
-  
-  
-        
-        
+      </div>
+      <div class="row">
+        <p>Copyright &copy; 2018 by Wild Tiger. All rights reserved.</p>
+      </div>
+    </footer>
+
+
+
+
+
     <!--
     <p>Welcome to <% for(var i=0; i< menu.length; i++){ %>
       <ul>
@@ -333,5 +421,6 @@
       </ul>
     <% } %></p>
     -->
-  </body>
+</body>
+
 </html>
