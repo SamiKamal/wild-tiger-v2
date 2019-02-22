@@ -476,6 +476,7 @@ footer p {
     position: absolute;
     top: 35%;
     left: 35%;
+    text-align: center;
     background-color: white;
     padding: 20px 25px;
     text-transform: uppercase;
@@ -484,7 +485,10 @@ footer p {
     filter: progid:DXImageTransform.Microsoft.Shadow(Strength=6, Direction=135, Color=#000000); /*IE 5.5-7*/
 
 }
-
+.text-block span{
+    font-weight: 600;
+    font-size: 2rem;
+}
 
 .menus-section{
     margin-top: 5em;
@@ -552,15 +556,19 @@ footer p {
     line-height: 1.5;
 }
 
-.hot-lvl{
+.notes-menu{
     text-align: center;
     margin-top: 40px;
     font-weight: 600;
 }
-.hot-lvl span{
+.notes-menu span{
     color: rgb(255, 0, 8);
 }
-
+.notes-menu-imp{
+    margin: 5px;
+    color: red;
+    font-size: 1.1rem;
+}
 
 
 /* Dessert section */

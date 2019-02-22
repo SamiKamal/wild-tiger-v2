@@ -4,7 +4,7 @@ var Menu = require('../models/bar')
 
 /* GET home page. */
 
-router.get('/', function(req, res, next) {
+router.get('/bar', function(req, res, next) {
   Menu.find({}, function (err,bars) {
     if(err) return console.err(err);
         res.render('bar',{
