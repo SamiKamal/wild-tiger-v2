@@ -14,7 +14,7 @@ var menuSchema = new mongoose.Schema({
     food_desc: String,
     food_price: String
 });
-var Menu = mongoose.model('Menu', menuSchema, 'menu');
+var Menu = mongoose.model('Menu', menuSchema, 'menus');
 
 
 connection.on('error', console.error.bind(console, 'connection error:'));
@@ -22,7 +22,7 @@ connection.once('open', function () {
     
     Menu.find(function(err, menus){
         if(err) return console.err(err);
-        console.log('hey');
+        console.log(menus);
     })
 
 

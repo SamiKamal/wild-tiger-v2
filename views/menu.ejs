@@ -22,7 +22,7 @@
     <h2>Appeitzers</h2>
     <div class="grid">
       <% for(var i=0; i<menu.length; i++){ %>
-      <%if(menu[i].category === 'APPEITZERS'){%>
+      <%if(menu[i].category === 'APPETIZERS'){%>
       <div class="col span-1-of-2 food_menu">
         <p class="food_name">
           <%= menu[i].food_name %>
@@ -30,7 +30,7 @@
         <p class="food_desc">
           <%= menu[i].food_desc %>
         </p>
-        <p class="food_price">$
+        <p class="food_price">
           <%= menu[i].food_price %>
         </p>
       </div>
@@ -80,8 +80,8 @@
         <p class="food_desc">
           <%= menu[i].food_desc %>
         </p>
-        <p class="food_price">$
-          <%= menu[i].food_price %>
+        <p class="food_price">
+          $<%= menu[i].food_price %>
         </p>
       </div>
       <% } %>
@@ -294,8 +294,8 @@
           <p class="food_desc">
             <%= menu[i].food_desc %>
           </p>
-          <p class="food_price">$
-            <%= menu[i].food_price %>
+          <p class="food_price">
+            $<%= menu[i].food_price %>
           </p>
         </div>
         <% } %>
@@ -316,8 +316,8 @@
           <p class="food_desc">
             <%= menu[i].food_desc %>
           </p>
-          <p class="food_price">$
-            <%= menu[i].food_price %>
+          <p class="food_price">
+            $<%= menu[i].food_price %>
           </p>
         </div>
         <% } %>
@@ -365,8 +365,8 @@
           <p class="food_desc">
             <%= menu[i].food_desc %>
           </p>
-          <p class="food_price">$
-            <%= menu[i].food_price %>
+          <p class="food_price">
+            $<%= menu[i].food_price %>
           </p>
         </div>
         <% } %>
