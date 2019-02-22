@@ -12,8 +12,12 @@ var getBarRouter = require('./routes/getBar');
 
 var app = express();
 
-mongoose.connect('mongodb+srv://Sami:sami123456@wt-cluster-xd7ou.mongodb.net/test?retryWrites=true');
-mongoose.Promise = global.Promise;
+//Connecting to MongoDB:
+mongoose.connect('mongodb+srv://Sami:sami123456@wt-cluster-xd7ou.mongodb.net/test?retryWrites=true', {dbName: 'wildtiger'});
+
+//Models for mongoose:
+var menus = require('./models/menu.js');
+
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
