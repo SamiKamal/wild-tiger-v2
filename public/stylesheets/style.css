@@ -732,25 +732,38 @@ footer p {
               clip-path: circle(150% at top right) !important;
 
   }
+  .sticky .nav-open{
+    -webkit-clip-path: circle(225% at top right) !important;
+            clip-path: circle(225% at top right) !important;
+
+  }
   .header-top nav ul{
-      margin-top: 5em;
+      margin-top: 5.4em;
       display: inline-block;
       position: absolute;
       right: 0;
       background-color: #ffffff;
       -webkit-clip-path: circle(0px at top right);
               clip-path: circle(0px at top right);
-      -webkit-transition: all ease-in-out .75s;
-      transition: all ease-in-out .75s;
+      -webkit-transition: all ease-in-out .45s;
+      transition: all ease-in-out .45s;
 
   }
 
+  .sticky .nav-ul {
+    margin-top: 6.1em;
+    background-color: #fff;
+    height: 260px;
+}
+
+  .sticky li,
   .header-top nav li{
       margin-top: 0;
       display: block;
       border-bottom: 1px solid #EF5411;
       
   }
+  .sticky li a,
   .header-top nav li a{
       color: #EF5411;
       display: block;
@@ -761,19 +774,25 @@ footer p {
       background-color: #EF5411;
       color: #ffffff;
   }
-
+  
+  
+  .sticky .logo-mobile img:first-child{ display: none; }
+  .sticky .logo-mobile img:last-child{ display: block; }
+  .logo-mobile img:last-child{ display: none;}
   .wild-tiger-logo, .wild-logo-li{
       display: none !important;
   }
 
+
+  
   .menu-toggle{
       padding: 1em;
       position: absolute;
       right: 1em;
-      top: 10px;
+      top: 30px;
       cursor: pointer;
   }
-
+ 
   .hamburgar,
   .hamburgar::after,
   .hamburgar::before{
@@ -783,8 +802,8 @@ footer p {
       height: 3px;
       width: 2.75em;
       border-radius: 3px;
-      -webkit-transition: all ease-in-out 0.75s;
-      transition: all ease-in-out 0.75s
+      -webkit-transition: all ease-in-out 0.45s;
+      transition: all ease-in-out 0.45s
   }
 
   .hamburgar::before{
