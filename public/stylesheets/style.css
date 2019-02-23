@@ -1010,3 +1010,10 @@ footer p {
 
 
 /* ANIMATIONS */
+.about-us-text,
+.about-us-img,
+.text-bar,
+.where-to--main,
+.where-to--hours{
+    opacity: 0;
+}
