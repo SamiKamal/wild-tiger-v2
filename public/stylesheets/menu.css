@@ -2,7 +2,9 @@ footer{
     margin-top: 3em;
     background-color: #F9F9F9;
 }
-
+.header-top{
+    display: none;
+}
 @media only screen and (max-width: 1500px){
     .text-block{
         top: 33%;
@@ -70,6 +72,13 @@ footer{
     }
 }
 
+@media only screen and (max-width: 975px){
+    .sticky .nav-ul {
+        margin-top: 5.6em;
+        height: 331px;
+    }
+    
+}
 @media only screen and (max-width: 900px){
     .text-block{
         top: 35%;

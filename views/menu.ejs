@@ -8,11 +8,33 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel='stylesheet' href='/stylesheets/style.css' />
   <link rel='stylesheet' href='/stylesheets/menu.css' />
+  <link rel='stylesheet' href='/stylesheets/animate.css' />
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <script src="https://unpkg.com/ionicons@4.5.5/dist/ionicons.js"></script>
 </head>
 
 <body>
+    <div class="header-top">
+        <nav class="nav-home">
+          <div class="logo-mobile">
+            <img src="images/WildTiger-Logo.png" alt="">
+            <img src="images/WildTiger-logo-black.png" alt="">
+          </div>
+          <ul class="nav-ul">
+            <li><a href="../">Home&ensp;&ensp;&ensp;&ensp;&ensp;</a></li>
+            <li><a href="/menu">Menu&ensp;&ensp;&ensp;&ensp;&ensp;</a></li>
+            <li class="wild-logo-li wild-logo-li-black"><a class="wild-tiger-logo wild-tiger-logo-black" href="/">Wild Tiger</a></li>
+            <li><a href="/bar">Bar</a></li>
+            <li><a href="">Locations</a></li>
+          </ul>
+
+          <div class="menu-toggle sticky-toggle">
+              <div class="hamburgar"></div>
+            </div>
+          </div>
+    
+        </nav>
+
   <div class="container img-menu">
     <img src="/images/Menu-image.jpg" alt="">
     <div class="text-block">
@@ -20,7 +42,7 @@
     </div>
   </div>
 
-  <section class="menus-section">
+  <section class="menus-section" id="menu-section--js">
     <div class="food_details">  
        <h2 data-aos="fade-up">Appeitzers</h2>
     </div>
@@ -440,7 +462,12 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
-      </script>    
+      </script>
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+       <script src="javascripts/jquery.waypoints.min.js"></script>
+       <script src="javascripts/menu.js"></script>
+      
 </body>
 
 </html>
