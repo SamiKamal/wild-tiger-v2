@@ -2,3 +2,145 @@ footer{
     margin-top: 3em;
     background-color: #F9F9F9;
 }
+
+@media only screen and (max-width: 1500px){
+    .text-block{
+        top: 33%;
+        left: 33%;
+    
+    }
+}
+
+@media only screen and (max-width: 1350px){
+    .text-block{
+        top: 30%;
+        left: 30%;
+    
+    }
+}
+@media only screen and (max-width: 1052px){
+    html{
+        font-size: 13px;
+    }
+
+    .text-block{
+        top: 36%;
+        left: 36%;
+        padding: 15px 20px;
+
+    }
+    .text-block h1{
+        font-size: 3rem;
+
+    }
+
+    .food_details h2{
+        font-size: 2rem;
+    }
+
+    .food_details p{
+        font-size: 1rem;
+    }
+    .notes-menu{
+        font-size: 0.7rem;
+    }
+    .grid{
+        display: block;
+        margin: 0 25%;
+    }
+    .food_desc{
+        width: 100%;
+        max-width: 100%;
+    }
+    .food_menu{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 3em;
+    }
+
+    .food_name{
+        margin: 0;
+    }
+
+    .food_details{
+        margin-left: 54px;
+        margin-bottom: 50px;
+    }
+}
+
+@media only screen and (max-width: 900px){
+    .text-block{
+        top: 35%;
+        left: 35%;
+    
+    }
+}
+
+@media only screen and (max-width: 774px){
+    .text-block{
+        top: 35%;
+        left: 35%;
+        padding: 11px 16px;
+
+    }
+
+    .text-block h1{
+        font-size: 2.2rem;
+    }
+
+    .grid{
+        margin-left: 19.5%
+    }
+
+    .food_details{
+        margin-left: 10px;
+    }
+}
+
+@media only screen and (max-width: 663px){
+    .text-block{
+        top: 31%;
+        left: 31%;
+
+    }
+
+    .food_name{
+        font-size: 1.6rem;
+    }
+    .food_desc{
+        font-size: 1.2rem;
+    }
+
+    .food_details{
+        margin-left: 0px;
+    }
+
+    
+
+
+}
+
+@media only screen and (max-width: 548px){
+    .text-block{
+        top: 26%;
+        left: 26%;
+        padding: 8px 13px;
+
+    }
+
+    .text-block h1{
+        font-size: 2rem;
+    }
+
+}
+
+@media only screen and (max-width: 420px){
+    .text-block{
+        top: 24%;
+        left: 24%;
+
+    }
+
+}

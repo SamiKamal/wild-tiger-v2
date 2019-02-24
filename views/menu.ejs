@@ -5,8 +5,9 @@
   <title>
     <%= header %>
   </title>
-  <link rel='stylesheet' href='/stylesheets/menu.css' />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel='stylesheet' href='/stylesheets/style.css' />
+  <link rel='stylesheet' href='/stylesheets/menu.css' />
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <script src="https://unpkg.com/ionicons@4.5.5/dist/ionicons.js"></script>
 </head>
@@ -20,7 +21,9 @@
   </div>
 
   <section class="menus-section">
-    <h2 data-aos="fade-up">Appeitzers</h2>
+    <div class="food_details">  
+       <h2 data-aos="fade-up">Appeitzers</h2>
+    </div>
     <div class="grid">
       <% for(var i=0; i<menu.length; i++){ %>
       <%if(menu[i].category === 'APPETIZERS'){%>
@@ -70,7 +73,9 @@
   </section>
 
   <section class="menus-section">
-    <h2 data-aos="fade-up">Salad</h2>
+   <div class="food_details">  
+      <h2 data-aos="fade-up">Salad</h2>
+   </div>
     <div class="grid">
       <% for(var i=0; i<menu.length; i++){ %>
       <%if(menu[i].category === 'SALAD'){%>
@@ -149,7 +154,9 @@
   </section>
 
   <section class="menus-section">
-    <h2 data-aos="fade-up">Noodle Soup</h2>
+    <div class="food_details">  
+      <h2 data-aos="fade-up">Noodle Soup</h2>
+    </div>
     <div class="grid">
       <% for(var i=0; i<menu.length; i++){ %>
       <%if(menu[i].category === 'NOODLES-SOUP'){%>
@@ -254,7 +261,9 @@
     </section>
 
     <section class="menus-section">
-      <h2 data-aos="fade-up">Side</h2>
+       <div class="food_details">  
+         <h2 data-aos="fade-up">Side</h2>
+       </div>
       <div class="grid" >
         <% for(var i=0; i<menu.length; i++){ %>
         <%if(menu[i].category === 'SIDE'){%>
@@ -284,7 +293,9 @@
 
 
     <section class="menus-section">
-      <h2 data-aos="fade-up">Dessert</h2>
+     <div class="food_details">  
+        <h2 data-aos="fade-up">Dessert</h2>
+     </div>
       <div class="grid">
         <% for(var i=0; i<menu.length; i++){ %>
         <%if(menu[i].category === 'DESSERT'){%>
@@ -306,7 +317,9 @@
     </section>
 
     <section class="menus-section">
-      <h2 data-aos="fade-up">Drinks</h2>
+     <div class="food_details">  
+        <h2 data-aos="fade-up">Drinks</h2>
+     </div>
       <div class="grid">
         <% for(var i=0; i<menu.length; i++){ %>
         <%if(menu[i].category === 'DRINKS'){%>
@@ -328,7 +341,9 @@
     </section>
 
     <section class="menus-section">
-      <h2 data-aos="fade-up"> Beer (Bottle)</h2>
+     <div class="food_details">  
+        <h2 data-aos="fade-up"> Beer (Bottle)</h2>
+     </div>
       <div class="grid">
         <% for(var i=0; i<menu.length; i++){ %>
         <%if(menu[i].category === 'Beer (Bottle)'){%>

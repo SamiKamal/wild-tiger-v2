@@ -500,7 +500,7 @@ footer p {
 /*
   ###############################################
     ###############################################
-                    Home Page
+                    Menu Page
       ###############################################
   ###############################################
 
@@ -557,13 +557,6 @@ footer p {
 }
 .menus-section h2::after{
     width: 150px;
-}
-.food_menu ul{
-    max-width: 460px;
-}
-.food_menu ul li{
-    display: inline-block;
-    list-style: none;
 }
 .food_name{
     display: inline-block;
@@ -683,6 +676,13 @@ footer p {
 
   .hero-text{
       margin-top: 15em;
+  }
+
+  .grid{
+    grid-template-columns: 400px 400px;
+  }
+  .food_menu{
+      margin-left: 10%;
   }
 
 }
