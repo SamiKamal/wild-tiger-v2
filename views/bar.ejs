@@ -5,7 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel='stylesheet' href='/stylesheets/menu.css' />
     <link rel='stylesheet' href='/stylesheets/bar.css' />
+    <link rel='stylesheet' href='/stylesheets/animate.css' />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <script src="https://unpkg.com/ionicons@4.5.5/dist/ionicons.js"></script>
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>
@@ -14,6 +17,27 @@
 </head>
 
 <body>
+        <div class="header-top">
+                <nav class="nav-home">
+                  <div class="logo-mobile">
+                    <img src="images/WildTiger-Logo.png" alt="">
+                    <img src="images/WildTiger-logo-black.png" alt="">
+                  </div>
+                  <ul class="nav-ul">
+                    <li><a href="../">Home</a></li>
+                    <li><a href="../menu">Menu</a></li>
+                    <li class="wild-logo-li wild-logo-li-black"><a class="wild-tiger-logo wild-tiger-logo-black" href="/">Wild Tiger</a></li>
+                    <li><a href="/">Bar</a></li>
+                    <li><a href="">Locations</a></li>
+                  </ul>
+        
+                  <div class="menu-toggle sticky-toggle">
+                      <div class="hamburgar"></div>
+                    </div>
+                  </div>
+            
+                </nav>
+        
     <div class="container img-menu">
         <img src="/images/menu-bar-image.jpg" alt="">
         <div class="text-block">
@@ -23,12 +47,14 @@
     </div>
 
 
-    <section class="menus-section">
-        <h2>Appeitzers</h2>
-        <div class="grid">
+    <section class="menus-section"  id="menu-section--js">
+        <div class="food_details" data-aos="fade-up">
+           <h2>Appeitzers</h2>
+        </div>
+         <div class="grid">
             <% for(var i=0; i<menu.length; i++){ %>
             <%if(menu[i].category === 'APPETIZERS'){%>
-            <div class="col span-1-of-2 food_menu">
+            <div class="col span-1-of-2 food_menu" data-aos="fade-up">
                 <p class="food_name">
                     <%= menu[i].food_name %>
                 </p>
@@ -44,18 +70,20 @@
 
         </div>
 
-        <p class="notes-menu">Happy hour menu available for dine in only.</p>
-        <p class="notes-menu-imp notes-menu">HAPPY HOUR FOOD REQUIRES A MINIMUM OF ONE DRINK PER <br> PERSON.</p>
+        <p class="notes-menu" data-aos="fade-up">Happy hour menu available for dine in only.</p>
+        <p class="notes-menu-imp notes-menu" data-aos="fade-up">HAPPY HOUR FOOD REQUIRES A MINIMUM OF ONE DRINK PER <br> PERSON.</p>
 
     </section>
 
 
-    <section class="menus-section">
-        <h2>Drinks</h2>
+    <section class="menus-section" data-aos="fade-up">
+        <div class="food_details data-aos="fade-up"">
+           <h2>Drinks</h2>
+        </div>
         <div class="grid">
             <% for(var i=0; i<menu.length; i++){ %>
             <%if(menu[i].category === 'DRINKS'){%>
-            <div class="col span-1-of-2 food_menu">
+            <div class="col span-1-of-2 food_menu" data-aos="fade-up">
                 <p class="food_name">
                     <%= menu[i].food_name %>
                 </p>
@@ -107,6 +135,14 @@
         </div>
     </footer>
 
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+        AOS.init();
+  </script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+  <script src="javascripts/jquery.waypoints.min.js"></script>
+  <script src="javascripts/menu.js"></script>
 
 </body>
 
