@@ -54,7 +54,7 @@ header{
     background-image: url(../images/Hero-image.jpg);
     background-repeat: no-repeat;
     background-position: center;
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
     background-size: cover;
     color: #fff;
     -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=6, Direction=0, Color=#000000)";/*IE 8*/
@@ -62,7 +62,7 @@ header{
     filter: progid:DXImageTransform.Microsoft.Shadow(Strength=6, Direction=135, Color=#000000); /*IE 5.5-7*/
 }
 
-header::after{
+/* header::after{
     content: "";
     display: block;
     width: 100%;
@@ -74,7 +74,7 @@ header::after{
     top: 101%;
     left: 0;
     z-index: 5;
-}
+} */
 
 .logo-mobile{
     display: none;
@@ -331,7 +331,7 @@ h2::after{
 /* ---------------------------------------------- */
 
 .bar-section{
-    background-image: url(../images/BAAR-FINAALDD.jpg);
+    background-image: url(../images/bar-image-test.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position:center;  

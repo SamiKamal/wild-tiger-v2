@@ -19,7 +19,7 @@ $(document).ready(function () {
 
         }
     }, {
-        offset: '15%'
+        offset: '55%'
     })
 
 
@@ -34,13 +34,13 @@ $(document).ready(function () {
         $('.about-us-text').addClass('animated fadeInRight')
         $('.header-top').removeClass('animated fadeInDown')
     }, {
-        offset: '35%'
+        offset: '55%'
     })
 
     $('.bar-section').waypoint(function(dir){
         $('.text-bar').addClass('animated fadeInLeft')
     }, {
-        offset: '30%'
+        offset: '40%'
     })
 
     $('#locations').waypoint(function (dir) {

@@ -9,3 +9,10 @@ footer{
     margin-top: 3em;
     background-color: #F9F9F9;
 }
+
+@media only screen and (max-width: 1052px){
+    .img-menu img{
+        content: url("/images/bar-menu-phone.jpg");
+        max-height: 100vh;
+    }
+}
