@@ -1042,16 +1042,16 @@ footer p {
 
 
 @media only screen and (max-height: 630px){
-  .text-bar{
-      margin-top: 5em;
-  }
 }
 
-@media only screen and (max-height: 775px){
+@media only screen and (max-height: 628px){
     .bar-section{
-        height: 100vh;
+        height: 90vh;
     }
-}
+    .text-bar{
+        margin-top: 18em;
+    }
+}   
 
 
 
@@ -1061,6 +1061,7 @@ footer p {
 .about-us-img,
 .text-bar,
 .where-to--main,
+.hero-text,
 .where-to--hours{
     opacity: 0;
 }
