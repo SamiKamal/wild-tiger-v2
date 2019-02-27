@@ -21,10 +21,33 @@ footer{
     }
 }
 @media only screen and (max-width: 1052px){
+    .main-menu-image img{
+        content: url("/images/menu-phone.png");
+        max-height: 100vh;
+    }
+}
+
+@media only screen and (max-width: 975px){
+    .sticky .nav-ul {
+        margin-top: 5.6em;
+    }
+    
+}
+@media only screen and (max-width: 900px){
     html{
         font-size: 13px;
     }
+    .nav-home{
+        font-size: 10px;
+    }
+    .sticky .nav-open {
+        margin-top: 5.6em;
+        height: 250px;
+    }
 
+    .nav-ul li a{
+        font-size: 1.5rem;
+    }
     .text-block{
         top: 36%;
         left: 36%;
@@ -72,16 +95,8 @@ footer{
         margin-left: 54px;
         margin-bottom: 50px;
     }
-}
 
-@media only screen and (max-width: 975px){
-    .sticky .nav-ul {
-        margin-top: 5.6em;
-        height: 331px;
-    }
-    
-}
-@media only screen and (max-width: 900px){
+
     .text-block{
         top: 35%;
         left: 35%;
@@ -153,5 +168,28 @@ footer{
         left: 24%;
 
     }
+
+}
+
+
+.arrow-down{
+    height: 60px;
+    width: 60px;
+    position: absolute;
+    border-radius: 50%;
+    background: #fff;
+    top: 90%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 999;
+    box-shadow: -0px 10px 15px -10px rgba(0,0,0,0.2);
+    cursor: pointer;
+}
+ion-icon{
+    color: #EF5411;
+    font-size: 32px;
+    position: absloute;
+    top: 50%;
+    transform: translate(40%,50%)
 
 }

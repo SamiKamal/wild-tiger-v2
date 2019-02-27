@@ -54,11 +54,26 @@ header{
     background-image: url(../images/Hero-image.jpg);
     background-repeat: no-repeat;
     background-position: center;
+    background-attachment: fixed;
     background-size: cover;
     color: #fff;
     -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=6, Direction=0, Color=#000000)";/*IE 8*/
     text-shadow: 0 3px 6px rgba(0,0,0,0.2);/* FF3.5+, Opera 9+, Saf1+, Chrome, IE10 */
     filter: progid:DXImageTransform.Microsoft.Shadow(Strength=6, Direction=135, Color=#000000); /*IE 5.5-7*/
+}
+
+header::after{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 116px;
+    background-image: url(../images/wild-tiger-brush.png);
+    background-size: cover;
+    background-position: 50%;
+    position: absolute;
+    top: 101%;
+    left: 0;
+    z-index: 5;
 }
 
 .logo-mobile{
@@ -858,6 +873,9 @@ footer p {
   h2::after{
       width: 150px
   }
+  .btn-orange{
+      font-size: 20px
+  }
 
   .about-us-text{
       margin-top: 30px;
@@ -1029,7 +1047,11 @@ footer p {
   }
 }
 
-
+@media only screen and (max-height: 775px){
+    .bar-section{
+        height: 100vh;
+    }
+}
 
 
 

@@ -50,4 +50,11 @@ $(document).ready(function () {
     }, {
         offset: '50%'
     })
+
+    $(".go-to-locations").click(function() {
+        $('html, body').animate({
+            scrollTop: $("#locations").offset().top
+        }, 1500);
+    });
+
 })
