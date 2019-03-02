@@ -5,6 +5,11 @@ footer{
 .header-top{
     display: none;
 }
+
+.text-block span{
+    margin-top: 0;
+    display: block;
+}
 @media only screen and (max-width: 1500px){
     .text-block{
         top: 33%;
@@ -25,6 +30,13 @@ footer{
         content: url("/images/menu-phone.jpg");
         max-height: 100vh;
     }
+
+    .text-block{
+        top: 40%;
+        font-size: 4rem;
+    }
+
+    
 }
 
 @media only screen and (max-width: 975px){
@@ -33,10 +45,12 @@ footer{
     }
     
 }
+
+@media only screen and (max-width: 940px){
+
+    html{font-size: 12px;}
+}  
 @media only screen and (max-width: 900px){
-    html{
-        font-size: 13px;
-    }
     .nav-home{
         font-size: 10px;
     }
@@ -49,14 +63,7 @@ footer{
         font-size: 1.5rem;
     }
     .text-block{
-        top: 36%;
-        left: 36%;
-        padding: 15px 20px;
-
-    }
-    .text-block h1{
-        font-size: 3rem;
-
+        top: 40%;
     }
     h2::after{
         height: 4px;
@@ -95,27 +102,14 @@ footer{
         margin-left: 54px;
         margin-bottom: 50px;
     }
-
-
-    .text-block{
-        top: 35%;
-        left: 35%;
-    
-    }
 }
 
 @media only screen and (max-width: 774px){
     .text-block{
-        top: 35%;
-        left: 35%;
-        padding: 11px 16px;
+        top: 40%;
+        left: 23%;
 
     }
-
-    .text-block h1{
-        font-size: 2.2rem;
-    }
-
     .grid{
         margin-left: 19.5%
     }
@@ -126,11 +120,6 @@ footer{
 }
 
 @media only screen and (max-width: 663px){
-    .text-block{
-        top: 31%;
-        left: 31%;
-
-    }
 
     .food_name{
         font-size: 1.6rem;
@@ -147,26 +136,68 @@ footer{
 
 
 }
+@media only screen and (max-width: 639px){
+    .dessert-block h1{
+        font-size: 3rem;
+    }
+    .text-block{
+        left: 17%;
 
+    }
+
+    .dessert-block{
+        left: 22%;
+        padding: 14px 19px;
+    }
+}
 @media only screen and (max-width: 548px){
     .text-block{
-        top: 26%;
-        left: 26%;
-        padding: 8px 13px;
+        padding: 12px 17px;
 
     }
 
     .text-block h1{
-        font-size: 2rem;
+        font-size: 3.5rem;
+    }
+    .dessert-block h1{
+        font-size: 3rem;
     }
 
 }
 
-@media only screen and (max-width: 420px){
+@media only screen and (max-width: 458px){
     .text-block{
-        top: 24%;
-        left: 24%;
+        top: 40%;
+        padding: 9px 14px;
 
+    }
+    .text-block h1{
+        font-size: 2.8rem;
+    }
+
+}
+
+@media only screen and (max-width: 417px){
+    .dessert-block{
+        top: 30%;
+        left: 12%;
+    }
+
+    .dessert-block h1{
+        font-size: 2.6rem;
+    }
+}
+@media only screen and (max-width: 373px){
+    .text-block{
+        padding: 10px 12px;
+    }
+    
+    .text-block h1{
+        font-size: 2.3rem;
+    }
+
+    .dessert-block{
+        left: 10%;;
     }
 
 }
