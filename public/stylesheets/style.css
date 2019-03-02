@@ -19,6 +19,9 @@ a {
 
 @import url('https://fonts.googleapis.com/css?family=Work+Sans:300,400,600');
 
+::after{
+    box-sizing: inherit;
+}
 html,*{
     margin: 0;
     padding: 0;
@@ -50,11 +53,12 @@ html{
 
 header{
     margin-bottom: 40px;
-    height: 110vh;
-    background-image: url(../images/Hero-image.jpg);
+    height: 120vh;
+    position: relative;
+    background-image: url(../images/hero-image-final.jpg);
     background-repeat: no-repeat;
     background-position: center;
-    /* background-attachment: fixed; */
+    background-attachment: fixed;
     background-size: cover;
     color: #fff;
     -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=6, Direction=0, Color=#000000)";/*IE 8*/
@@ -62,7 +66,7 @@ header{
     filter: progid:DXImageTransform.Microsoft.Shadow(Strength=6, Direction=135, Color=#000000); /*IE 5.5-7*/
 }
 
-/* header::after{
+header::after{
     content: "";
     display: block;
     width: 100%;
@@ -71,10 +75,10 @@ header{
     background-size: cover;
     background-position: 50%;
     position: absolute;
-    top: 101%;
+    top: 95%;
     left: 0;
     z-index: 5;
-} */
+}
 
 .logo-mobile{
     display: none;
@@ -154,7 +158,7 @@ header{
     margin-left: 60px;
 }
 
-.wild-tiger-logo-white { background-image: url(../images/WildTiger-Logo.png); }
+.wild-tiger-logo-white { background-image: url(../images/WildTiger-Logo.svg); }
 .sticky .wild-logo-li-white{ display: none;}
 
 .wild-tiger-logo-black{ display: none;}
