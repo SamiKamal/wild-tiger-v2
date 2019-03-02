@@ -75,7 +75,7 @@ header::after{
     background-size: cover;
     background-position: 50%;
     position: absolute;
-    top: 95%;
+    top: 94%;
     left: 0;
     z-index: 5;
 }
@@ -1045,7 +1045,11 @@ footer p {
 }
 
 
-@media only screen and (max-height: 630px){
+@media only screen and (max-height: 840px){
+    header::after{
+        top: 90%;
+    }
+    
 }
 
 @media only screen and (max-height: 628px){
