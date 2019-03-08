@@ -47,61 +47,61 @@
         <div class="arrow-down"><ion-icon name="arrow-down"></ion-icon></div>
     </div>
 
-
-    <section class="menus-section"  id="menu-section--js">
-        <div class="food_details" data-aos="fade-up">
-           <h2>Appeitzers</h2>
-        </div>
-         <div class="grid">
-            <% for(var i=0; i<menu.length; i++){ %>
-            <%if(menu[i].category === 'APPETIZERS'){%>
-            <div class="col span-1-of-2 food_menu" data-aos="fade-up">
-                <p class="food_name">
-                    <%= menu[i].food_name %>
-                </p>
-                <p class="food_desc">
-                    <%= menu[i].food_desc %>
-                </p>
-                <p class="food_price">
-                  $<%= menu[i].food_price %>
-                </p>
+    <div class="full-container">
+        <section class="menus-section"  id="menu-section--js">
+            <div class="food_details" data-aos="fade-up">
+            <h2>Appeitzers</h2>
             </div>
-            <% } %>
-            <%}%>
+            <div class="grid">
+                <% for(var i=0; i<menu.length; i++){ %>
+                <%if(menu[i].category === 'APPETIZERS'){%>
+                <div class="col span-1-of-2 food_menu" data-aos="fade-up">
+                    <p class="food_name">
+                        <%= menu[i].food_name %>
+                    </p>
+                    <p class="food_desc">
+                        <%= menu[i].food_desc %>
+                    </p>
+                    <p class="food_price">
+                    $<%= menu[i].food_price %>
+                    </p>
+                </div>
+                <% } %>
+                <%}%>
 
-        </div>
-
-        <p class="notes-menu" data-aos="fade-up">Happy hour menu available for dine in only.</p>
-        <p class="notes-menu-imp notes-menu" data-aos="fade-up">HAPPY HOUR FOOD REQUIRES A MINIMUM OF ONE DRINK PER <br> PERSON.</p>
-
-    </section>
-
-
-    <section class="menus-section" data-aos="fade-up">
-        <div class="food_details data-aos="fade-up"">
-           <h2>Drinks</h2>
-        </div>
-        <div class="grid">
-            <% for(var i=0; i<menu.length; i++){ %>
-            <%if(menu[i].category === 'DRINKS'){%>
-            <div class="col span-1-of-2 food_menu" data-aos="fade-up">
-                <p class="food_name">
-                    <%= menu[i].food_name %>
-                </p>
-                <p class="food_desc">
-                    <%= menu[i].food_desc %>
-                </p>
-                <p class="food_price"> 
-                    &<%= menu[i].food_price %>
-                </p>
             </div>
-            <% } %>
-            <%}%>
 
-        </div>
+            <p class="notes-menu" data-aos="fade-up">Happy hour menu available for dine in only.</p>
+            <p class="notes-menu-imp notes-menu" data-aos="fade-up">HAPPY HOUR FOOD REQUIRES A MINIMUM OF ONE DRINK PER <br> PERSON.</p>
 
-    </section>
+        </section>
 
+
+        <section class="menus-section" data-aos="fade-up">
+            <div class="food_details data-aos="fade-up"">
+            <h2>Drinks</h2>
+            </div>
+            <div class="grid">
+                <% for(var i=0; i<menu.length; i++){ %>
+                <%if(menu[i].category === 'DRINKS'){%>
+                <div class="col span-1-of-2 food_menu" data-aos="fade-up">
+                    <p class="food_name">
+                        <%= menu[i].food_name %>
+                    </p>
+                    <p class="food_desc">
+                        <%= menu[i].food_desc %>
+                    </p>
+                    <p class="food_price"> 
+                        &<%= menu[i].food_price %>
+                    </p>
+                </div>
+                <% } %>
+                <%}%>
+
+            </div>
+
+        </section>
+    </div>
     <!-- FOOTER -->
     <footer>
         <div class="row">

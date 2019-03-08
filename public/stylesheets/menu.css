@@ -5,7 +5,9 @@ footer{
 .header-top{
     display: none;
 }
-
+.full-container{
+    background-image: url('/images/menu-background.png');
+}
 .text-block span{
     margin-top: 0;
     display: block;

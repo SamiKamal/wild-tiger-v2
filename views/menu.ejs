@@ -34,7 +34,6 @@
           </div>
     
         </nav>
-
   <div class="container img-menu main-menu-image">
     <img src="/images/menu-test-image.jpg" alt="">
     <div class="text-block">
@@ -43,168 +42,86 @@
     <div class="arrow-down"><ion-icon name="arrow-down"></ion-icon></div>
   </div>
 
-
-  <section class="menus-section" id="menu-section--js">
-    <div class="food_details">  
-       <h2 data-aos="fade-up">Appeitzers</h2>
-    </div>
-    <div class="grid">
-      <% for(var i=0; i<menu.length; i++){ %>
-      <%if(menu[i].category === 'APPETIZERS'){%>
-      <div class="col span-1-of-2 food_menu" data-aos="fade-up">
-        <p class="food_name">
-          <%= menu[i].food_name %>
-        </p>
-        <p class="food_desc">
-          <%= menu[i].food_desc %>
-        </p>
-        <p class="food_price">
-          <%= menu[i].food_price %>
-        </p>
+  <div class="full-container">
+    <section class="menus-section" id="menu-section--js">
+      <div class="food_details">  
+        <h2 data-aos="fade-up">Appeitzers</h2>
       </div>
-      <% } %>
-      <%}%>
+      <div class="grid">
+        <% for(var i=0; i<menu.length; i++){ %>
+        <%if(menu[i].category === 'APPETIZERS'){%>
+        <div class="col span-1-of-2 food_menu" data-aos="fade-up">
+          <p class="food_name">
+            <%= menu[i].food_name %>
+          </p>
+          <p class="food_desc">
+            <%= menu[i].food_desc %>
+          </p>
+          <p class="food_price">
+            <%= menu[i].food_price %>
+          </p>
+        </div>
+        <% } %>
+        <%}%>
 
-    </div>
-  </section>
-
-  <section class="menus-section">
-    <div class="food_details" data-aos="fade-up">
-      <h2>Soup</h2>
-      <p>Your choice of Chicken, Tofu or Vegetables $8.95,<br> Beef or Pork $10,<br>
-        Shrimp $12, Seafood $ 14</p>
-    </div>
-    <div class="grid">
-      <% for(var i=0; i<menu.length; i++){ %>
-      <%if(menu[i].category === 'SOUP'){%>
-      <div class="col span-1-of-2 food_menu" data-aos="fade-up">
-        <p class="food_name">
-          <%= menu[i].food_name %>
-        </p>
-        <p class="food_desc">
-          <%= menu[i].food_desc %>
-        </p>
-        <p class="food_price">
-          <%= menu[i].food_price %>
-        </p>
       </div>
-      <% } %>
-      <%}%>
-
-    </div>
-    <p class="notes-menu" data-aos="fade-up">Spice level : *mild, **medium, ***hot, <span> ****very hot</span></p>
-
-  </section>
-
-  <section class="menus-section">
-   <div class="food_details">  
-      <h2 data-aos="fade-up">Salad</h2>
-   </div>
-    <div class="grid">
-      <% for(var i=0; i<menu.length; i++){ %>
-      <%if(menu[i].category === 'SALAD'){%>
-      <div class="col span-1-of-2 food_menu" data-aos="fade-up">
-        <p class="food_name">
-          <%= menu[i].food_name %>
-        </p>
-        <p class="food_desc">
-          <%= menu[i].food_desc %>
-        </p>
-        <p class="food_price">
-          $<%= menu[i].food_price %>
-        </p>
-      </div>
-      <% } %>
-      <%}%>
-
-    </div>
-  </section>
-
-  <section class="menus-section">
-    <div class="food_details" data-aos="fade-up" data-aos-mirror="true">
-      <h2>Stir-Fried</h2>
-      <p>​Served with steamed rice. <br>
-        ​Substitute brown rice add $1 <br>
-        Choice of Chicken, Tofu, Vegetable $11, Beef or Pork $12, <br>
-        Shrimp $14, Seafood $16
-      </p>
-    </div>
-    <div class="grid">
-      <% for(var i=0; i<menu.length; i++){ %>
-      <%if(menu[i].category === 'STIR-FRIED'){%>
-      <div class="col span-1-of-2 food_menu" data-aos="fade-up">
-        <p class="food_name">
-          <%= menu[i].food_name %>
-        </p>
-        <p class="food_desc">
-          <%= menu[i].food_desc %>
-        </p>
-        <p class="food_price">
-          <%= menu[i].food_price %>
-        </p>
-      </div>
-      <% } %>
-      <%}%>
-
-    </div>
-  </section>
-
-  <section class="menus-section">
-    <div class="food_details" data-aos="fade-up">
-      <h2>Noodles</h2>
-      <p>​Choice of Chicken, Tofu, Vegetable $11, Beef or Pork $12, <br>
-        Shrimp $14, Seafood $16
-
-      </p>
-    </div>
-    <div class="grid">
-      <% for(var i=0; i<menu.length; i++){ %>
-      <%if(menu[i].category === 'NOODLES'){%>
-      <div class="col span-1-of-2 food_menu" data-aos="fade-up">
-        <p class="food_name">
-          <%= menu[i].food_name %>
-        </p>
-        <p class="food_desc">
-          <%= menu[i].food_desc %>
-        </p>
-        <p class="food_price">
-          <%= menu[i].food_price %>
-        </p>
-      </div>
-      <% } %>
-      <%}%>
-
-    </div>
-  </section>
-
-  <section class="menus-section">
-    <div class="food_details">  
-      <h2 data-aos="fade-up">Noodle Soup</h2>
-    </div>
-    <div class="grid">
-      <% for(var i=0; i<menu.length; i++){ %>
-      <%if(menu[i].category === 'NOODLES-SOUP'){%>
-      <div class="col span-1-of-2 food_menu" data-aos="fade-up">
-        <p class="food_name">
-          <%= menu[i].food_name %>
-        </p>
-        <p class="food_desc">
-          <%= menu[i].food_desc %>
-        </p>
-        <p class="food_price">
-          <%= menu[i].food_price %>
-        </p>
-      </div>
-      <% } %>
-      <%}%>
-
-    </div>
-    <p class="notes-menu" data-aos="fade-up">Spice level : *mild, **medium, ***hot, <span> ****very hot</span></p>
-
+    </section>
 
     <section class="menus-section">
       <div class="food_details" data-aos="fade-up">
-        <h2>Curries</h2>
+        <h2>Soup</h2>
+        <p>Your choice of Chicken, Tofu or Vegetables $8.95,<br> Beef or Pork $10,<br>
+          Shrimp $12, Seafood $ 14</p>
+      </div>
+      <div class="grid">
+        <% for(var i=0; i<menu.length; i++){ %>
+        <%if(menu[i].category === 'SOUP'){%>
+        <div class="col span-1-of-2 food_menu" data-aos="fade-up">
+          <p class="food_name">
+            <%= menu[i].food_name %>
+          </p>
+          <p class="food_desc">
+            <%= menu[i].food_desc %>
+          </p>
+          <p class="food_price">
+            <%= menu[i].food_price %>
+          </p>
+        </div>
+        <% } %>
+        <%}%>
+
+      </div>
+      <p class="notes-menu" data-aos="fade-up">Spice level : *mild, **medium, ***hot, <span> ****very hot</span></p>
+
+    </section>
+
+    <section class="menus-section">
+    <div class="food_details">  
+        <h2 data-aos="fade-up">Salad</h2>
+    </div>
+      <div class="grid">
+        <% for(var i=0; i<menu.length; i++){ %>
+        <%if(menu[i].category === 'SALAD'){%>
+        <div class="col span-1-of-2 food_menu" data-aos="fade-up">
+          <p class="food_name">
+            <%= menu[i].food_name %>
+          </p>
+          <p class="food_desc">
+            <%= menu[i].food_desc %>
+          </p>
+          <p class="food_price">
+            $<%= menu[i].food_price %>
+          </p>
+        </div>
+        <% } %>
+        <%}%>
+
+      </div>
+    </section>
+
+    <section class="menus-section">
+      <div class="food_details" data-aos="fade-up" data-aos-mirror="true">
+        <h2>Stir-Fried</h2>
         <p>​Served with steamed rice. <br>
           ​Substitute brown rice add $1 <br>
           Choice of Chicken, Tofu, Vegetable $11, Beef or Pork $12, <br>
@@ -213,7 +130,7 @@
       </div>
       <div class="grid">
         <% for(var i=0; i<menu.length; i++){ %>
-        <%if(menu[i].category === 'CURRIES'){%>
+        <%if(menu[i].category === 'STIR-FRIED'){%>
         <div class="col span-1-of-2 food_menu" data-aos="fade-up">
           <p class="food_name">
             <%= menu[i].food_name %>
@@ -233,7 +150,7 @@
 
     <section class="menus-section">
       <div class="food_details" data-aos="fade-up">
-        <h2>Fried Rice</h2>
+        <h2>Noodles</h2>
         <p>​Choice of Chicken, Tofu, Vegetable $11, Beef or Pork $12, <br>
           Shrimp $14, Seafood $16
 
@@ -241,7 +158,7 @@
       </div>
       <div class="grid">
         <% for(var i=0; i<menu.length; i++){ %>
-        <%if(menu[i].category === 'FRIED-RICE'){%>
+        <%if(menu[i].category === 'NOODLES'){%>
         <div class="col span-1-of-2 food_menu" data-aos="fade-up">
           <p class="food_name">
             <%= menu[i].food_name %>
@@ -260,13 +177,12 @@
     </section>
 
     <section class="menus-section">
-      <div class="food_details" data-aos="fade-up">
-        <h2>Specials</h2>
-        <p>​Served with steamed rice. Substitute brown rice add $1 </p>
+      <div class="food_details">  
+        <h2 data-aos="fade-up">Noodle Soup</h2>
       </div>
       <div class="grid">
         <% for(var i=0; i<menu.length; i++){ %>
-        <%if(menu[i].category === 'SPECIALS'){%>
+        <%if(menu[i].category === 'NOODLES-SOUP'){%>
         <div class="col span-1-of-2 food_menu" data-aos="fade-up">
           <p class="food_name">
             <%= menu[i].food_name %>
@@ -282,138 +198,222 @@
         <%}%>
 
       </div>
-    </section>
+      <p class="notes-menu" data-aos="fade-up">Spice level : *mild, **medium, ***hot, <span> ****very hot</span></p>
 
-    <section class="menus-section">
-       <div class="food_details">  
-         <h2 data-aos="fade-up">Side</h2>
-       </div>
-      <div class="grid" >
-        <% for(var i=0; i<menu.length; i++){ %>
-        <%if(menu[i].category === 'SIDE'){%>
-        <div class="col span-1-of-2 food_menu" data-aos="fade-up">
-          <p class="food_name">
-            <%= menu[i].food_name %>
-          </p>
-          <p class="food_desc">
-            <%= menu[i].food_desc %>
-          </p>
-          <p class="food_price">
-            <%= menu[i].food_price %>
+
+      <section class="menus-section">
+        <div class="food_details" data-aos="fade-up">
+          <h2>Curries</h2>
+          <p>​Served with steamed rice. <br>
+            ​Substitute brown rice add $1 <br>
+            Choice of Chicken, Tofu, Vegetable $11, Beef or Pork $12, <br>
+            Shrimp $14, Seafood $16
           </p>
         </div>
-        <% } %>
-        <%}%>
+        <div class="grid">
+          <% for(var i=0; i<menu.length; i++){ %>
+          <%if(menu[i].category === 'CURRIES'){%>
+          <div class="col span-1-of-2 food_menu" data-aos="fade-up">
+            <p class="food_name">
+              <%= menu[i].food_name %>
+            </p>
+            <p class="food_desc">
+              <%= menu[i].food_desc %>
+            </p>
+            <p class="food_price">
+              <%= menu[i].food_price %>
+            </p>
+          </div>
+          <% } %>
+          <%}%>
 
-      </div>
-    </section>
+        </div>
+      </section>
 
-    <div class="container img-menu desserts" data-aos="fade-up">
-      <img src="/images/dessert-menu.jpg" alt="">
-      <div class="text-block dessert-block">
-        <h1>Dessert/Drinks</h1>
-      </div>
-    </div>
+      <section class="menus-section">
+        <div class="food_details" data-aos="fade-up">
+          <h2>Fried Rice</h2>
+          <p>​Choice of Chicken, Tofu, Vegetable $11, Beef or Pork $12, <br>
+            Shrimp $14, Seafood $16
 
-
-    <section class="menus-section">
-     <div class="food_details">  
-        <h2 data-aos="fade-up">Dessert</h2>
-     </div>
-      <div class="grid">
-        <% for(var i=0; i<menu.length; i++){ %>
-        <%if(menu[i].category === 'DESSERT'){%>
-        <div class="col span-1-of-2 food_menu" data-aos="fade-up">
-          <p class="food_name">
-            <%= menu[i].food_name %>
-          </p>
-          <p class="food_desc">
-            <%= menu[i].food_desc %>
-          </p>
-          <p class="food_price">
-            $<%= menu[i].food_price %>
           </p>
         </div>
-        <% } %>
-        <%}%>
+        <div class="grid">
+          <% for(var i=0; i<menu.length; i++){ %>
+          <%if(menu[i].category === 'FRIED-RICE'){%>
+          <div class="col span-1-of-2 food_menu" data-aos="fade-up">
+            <p class="food_name">
+              <%= menu[i].food_name %>
+            </p>
+            <p class="food_desc">
+              <%= menu[i].food_desc %>
+            </p>
+            <p class="food_price">
+              <%= menu[i].food_price %>
+            </p>
+          </div>
+          <% } %>
+          <%}%>
 
+        </div>
+      </section>
+
+      <section class="menus-section">
+        <div class="food_details" data-aos="fade-up">
+          <h2>Specials</h2>
+          <p>​Served with steamed rice. Substitute brown rice add $1 </p>
+        </div>
+        <div class="grid">
+          <% for(var i=0; i<menu.length; i++){ %>
+          <%if(menu[i].category === 'SPECIALS'){%>
+          <div class="col span-1-of-2 food_menu" data-aos="fade-up">
+            <p class="food_name">
+              <%= menu[i].food_name %>
+            </p>
+            <p class="food_desc">
+              <%= menu[i].food_desc %>
+            </p>
+            <p class="food_price">
+              <%= menu[i].food_price %>
+            </p>
+          </div>
+          <% } %>
+          <%}%>
+
+        </div>
+      </section>
+
+      <section class="menus-section">
+        <div class="food_details">  
+          <h2 data-aos="fade-up">Side</h2>
+        </div>
+        <div class="grid" >
+          <% for(var i=0; i<menu.length; i++){ %>
+          <%if(menu[i].category === 'SIDE'){%>
+          <div class="col span-1-of-2 food_menu" data-aos="fade-up">
+            <p class="food_name">
+              <%= menu[i].food_name %>
+            </p>
+            <p class="food_desc">
+              <%= menu[i].food_desc %>
+            </p>
+            <p class="food_price">
+              <%= menu[i].food_price %>
+            </p>
+          </div>
+          <% } %>
+          <%}%>
+
+        </div>
+      </section>
+
+      <div class="container img-menu desserts" data-aos="fade-up">
+        <img src="/images/dessert-menu.jpg" alt="">
+        <div class="text-block dessert-block">
+          <h1>Dessert/Drinks</h1>
+        </div>
       </div>
-    </section>
 
-    <section class="menus-section">
-     <div class="food_details">  
-        <h2 data-aos="fade-up">Drinks</h2>
-     </div>
-      <div class="grid">
-        <% for(var i=0; i<menu.length; i++){ %>
-        <%if(menu[i].category === 'DRINKS'){%>
-        <div class="col span-1-of-2 food_menu" data-aos="fade-up">
-          <p class="food_name">
-            <%= menu[i].food_name %>
-          </p>
-          <p class="food_desc">
-            <%= menu[i].food_desc %>
-          </p>
-          <p class="food_price">
-            $<%= menu[i].food_price %>
+
+      <section class="menus-section">
+      <div class="food_details">  
+          <h2 data-aos="fade-up">Dessert</h2>
+      </div>
+        <div class="grid">
+          <% for(var i=0; i<menu.length; i++){ %>
+          <%if(menu[i].category === 'DESSERT'){%>
+          <div class="col span-1-of-2 food_menu" data-aos="fade-up">
+            <p class="food_name">
+              <%= menu[i].food_name %>
+            </p>
+            <p class="food_desc">
+              <%= menu[i].food_desc %>
+            </p>
+            <p class="food_price">
+              $<%= menu[i].food_price %>
+            </p>
+          </div>
+          <% } %>
+          <%}%>
+
+        </div>
+      </section>
+
+      <section class="menus-section">
+      <div class="food_details">  
+          <h2 data-aos="fade-up">Drinks</h2>
+      </div>
+        <div class="grid">
+          <% for(var i=0; i<menu.length; i++){ %>
+          <%if(menu[i].category === 'DRINKS'){%>
+          <div class="col span-1-of-2 food_menu" data-aos="fade-up">
+            <p class="food_name">
+              <%= menu[i].food_name %>
+            </p>
+            <p class="food_desc">
+              <%= menu[i].food_desc %>
+            </p>
+            <p class="food_price">
+              $<%= menu[i].food_price %>
+            </p>
+          </div>
+          <% } %>
+          <%}%>
+
+        </div>
+      </section>
+
+      <section class="menus-section">
+      <div class="food_details">  
+          <h2 data-aos="fade-up"> Beer (Bottle)</h2>
+      </div>
+        <div class="grid">
+          <% for(var i=0; i<menu.length; i++){ %>
+          <%if(menu[i].category === 'Beer (Bottle)'){%>
+          <div class="col span-1-of-2 food_menu" data-aos="fade-up">
+            <p class="food_name">
+              <%= menu[i].food_name %>
+            </p>
+            <p class="food_desc">
+              <%= menu[i].food_desc %>
+            </p>
+            <p class="food_price">
+              <%= menu[i].food_price %>
+            </p>
+          </div>
+          <% } %>
+          <%}%>
+
+        </div>
+      </section>
+
+      <section class="menus-section">
+        <div class="food_details" data-aos="fade-up">
+          <h2>Wine</h2>
+          <p>​ All house wine $6 <br>
+            Chardonnay, Cabernet Sauvignon, Merot, Resling
           </p>
         </div>
-        <% } %>
-        <%}%>
+        <div class="grid">
+          <% for(var i=0; i<menu.length; i++){ %>
+          <%if(menu[i].category === 'WINE'){%>
+          <div class="col span-1-of-2 food_menu" data-aos="fade-up">
+            <p class="food_name">
+              <%= menu[i].food_name %>
+            </p>
+            <p class="food_desc">
+              <%= menu[i].food_desc %>
+            </p>
+            <p class="food_price">
+              $<%= menu[i].food_price %>
+            </p>
+          </div>
+          <% } %>
+          <%}%>
 
-      </div>
-    </section>
-
-    <section class="menus-section">
-     <div class="food_details">  
-        <h2 data-aos="fade-up"> Beer (Bottle)</h2>
-     </div>
-      <div class="grid">
-        <% for(var i=0; i<menu.length; i++){ %>
-        <%if(menu[i].category === 'Beer (Bottle)'){%>
-        <div class="col span-1-of-2 food_menu" data-aos="fade-up">
-          <p class="food_name">
-            <%= menu[i].food_name %>
-          </p>
-          <p class="food_desc">
-            <%= menu[i].food_desc %>
-          </p>
-          <p class="food_price">
-            <%= menu[i].food_price %>
-          </p>
         </div>
-        <% } %>
-        <%}%>
-
-      </div>
-    </section>
-
-    <section class="menus-section">
-      <div class="food_details" data-aos="fade-up">
-        <h2>Wine</h2>
-        <p>​ All house wine $6 <br>
-          Chardonnay, Cabernet Sauvignon, Merot, Resling
-        </p>
-      </div>
-      <div class="grid">
-        <% for(var i=0; i<menu.length; i++){ %>
-        <%if(menu[i].category === 'WINE'){%>
-        <div class="col span-1-of-2 food_menu" data-aos="fade-up">
-          <p class="food_name">
-            <%= menu[i].food_name %>
-          </p>
-          <p class="food_desc">
-            <%= menu[i].food_desc %>
-          </p>
-          <p class="food_price">
-            $<%= menu[i].food_price %>
-          </p>
-        </div>
-        <% } %>
-        <%}%>
-
-      </div>
-    </section>
+      </section>
+  </div>
     <!-- FOOTER -->
     <footer>
       <div class="row">
