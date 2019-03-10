@@ -444,7 +444,7 @@ h2::after{
     display: inline-block;
     float: left;
     margin-left: -120px;
-    padding-right: 20px;
+    padding-right: 8px;
     font-weight: 600; 
 }
 .where-to--hours--hours{
