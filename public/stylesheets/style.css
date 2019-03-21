@@ -330,6 +330,49 @@ h2::after{
     opacity: 1;
   }
   
+  .meals-show figure{
+      position: relative;
+  }
+  .btn-white{
+    display: inline-block;
+    color: #EF5411;
+    padding: 8px 20px;
+    text-align: center;
+    font-size: .7rem;
+    font-weight: 600;
+    text-decoration: none;
+    background-color: #fff;
+    border-radius: 85px;
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+    border: 2px solid transparent;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=8, Direction=0, Color=#000000)";
+    -webkit-box-shadow: 0 3px 8px 3px rgba(0,0,0,0.1);
+    box-shadow: 0 3px 8px 3px rgba(0,0,0,0.1);
+    filter: progid:DXImageTransform.Microsoft.Shadow(Strength=8, Direction=135, Color=#000000); 
+  }
+  .btn-white:hover{
+    border: 2px solid #EF5411;
+  }
+  .port-desc{
+    text-align: center;
+    position: absolute;
+    z-index: 100;
+    background-color: rgba(255, 255, 255, 0.75);
+    bottom: -10em; 
+    left: 0em;
+    right: 0em;
+    padding-bottom: 2em;
+    transition: all 0.5s;
+  
+  }
+  .port-desc p{
+    margin: 1em;
+  }
+  .meals-show figure:hover .port-desc{
+    bottom: 0em;
+  }
+  
 /* ---------------------------------------------- */
 /* Bar */
 /* ---------------------------------------------- */
@@ -917,6 +960,9 @@ footer p {
 
 @media only screen and (max-width: 760px){
 
+    .port-desc{
+        bottom: 0;
+    }
   .about-us-text span{
       display: none;
   }
@@ -956,6 +1002,24 @@ footer p {
   }
 }
 
+@media only screen and (max-width: 620px){
+    .meals-show li{
+        display: block;
+        width: 100%;
+      }
+    .display-none{
+        display: none;
+    }
+
+    .meals-show{
+        font-size: 1.3rem;
+    }
+    .port-desc{
+        padding-top: 2em;
+        padding-bottom: 3em;
+
+    }
+}
 @media only screen and (max-width:576px){
   .meals{
       margin-top: 0px;
@@ -998,9 +1062,9 @@ footer p {
   .about-us{
       margin-bottom: 20px;
   }
-  .meals{
+  /* .meals{
       display: none;
-  }
+  } */
 
   .where-to--location{
       font-size: 2rem;
