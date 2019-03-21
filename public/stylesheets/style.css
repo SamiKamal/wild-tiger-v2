@@ -1004,11 +1004,10 @@ footer p {
 
 @media only screen and (max-width: 620px){
     .meals-show li{
-        display: block;
         width: 100%;
       }
     .display-none{
-        display: none;
+        display: none !important;
     }
 
     .meals-show{
@@ -1018,6 +1017,11 @@ footer p {
         padding-top: 2em;
         padding-bottom: 3em;
 
+    }
+
+    .btn-white{
+        font-size: 1rem;
+        padding: 8px 30px;
     }
 }
 @media only screen and (max-width:576px){
