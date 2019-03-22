@@ -336,7 +336,7 @@ h2::after{
   .btn-white{
     display: inline-block;
     color: #EF5411;
-    padding: 8px 20px;
+    padding: 8px 30px;
     text-align: center;
     font-size: .7rem;
     font-weight: 600;
@@ -364,6 +364,7 @@ h2::after{
     right: 0em;
     padding-bottom: 2em;
     transition: all 0.5s;
+    height: 116px;
   
   }
   .port-desc p{
@@ -774,6 +775,13 @@ footer p {
   .text-bar h2::after{
       display: block;
   }
+  .btn-white{
+    font-size: .8rem;
+  }
+
+  .meals-show figure:hover .port-desc{
+     bottom: -1.3em;
+  }
 
   
 }
@@ -920,6 +928,12 @@ footer p {
   h2::after{
       width: 150px
   }
+  .port-desc{
+      bottom: -12em;
+  }
+  .btn-white{
+      font-size: 1rem;
+  }
   .btn-orange{
       font-size: 20px
   }
@@ -930,6 +944,12 @@ footer p {
 
 }
 
+@media only screen and (max-width: 850px){
+    .meals-show figure:hover .port-desc{
+        bottom: -3em;
+     }
+   
+}
 
 @media only screen and (max-width: 773px){
   h2::after{
@@ -962,10 +982,15 @@ footer p {
 
     .port-desc{
         bottom: 0;
+        max-height: 80px;
     }
   .about-us-text span{
       display: none;
   }
+
+  .meals-show figure:hover .port-desc{
+    bottom: 0;
+ }
 
 }
 
@@ -1014,13 +1039,12 @@ footer p {
         font-size: 1.3rem;
     }
     .port-desc{
-        padding-top: 2em;
-        padding-bottom: 3em;
-
+        padding: 1em 0;
+        max-height: 112px;
     }
 
     .btn-white{
-        font-size: 1rem;
+        font-size: 1.1rem;
         padding: 8px 30px;
     }
 }
