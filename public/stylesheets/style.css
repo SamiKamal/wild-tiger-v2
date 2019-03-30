@@ -288,49 +288,49 @@ h2::after{
     line-height: 1.5
 }
 /* ---------------------------------------------- */
-/* MEALS */
+/* MEALS SECTION */
 /* ---------------------------------------------- */
 .meals{
     padding: 0;
     margin-top: 40px;
   
   }
-  .meals-show{
+  .meals-section{
     width: 100%;
     list-style: none;
   
   
   }
-  .meals-show li{
+  .meals-section li{
     display: block;
     width: 25%;
     float:left;
   
   }
-  .meals-show li figure{
+  .meals-section li figure{
     width: 100%;
     margin: 0;
     overflow: hidden;
-    background-color: #000;
+    background-color: #0e0e0e;
   }
   
-  .meals-show li figure img{
+  .meals-section li figure img{
     width: 100%;
     height: auto;
     -webkit-transform: scale(1.15);
     transform: scale(1.15);
-    -webkit-transition: all 0.5s;
-    transition: all 0.5s;
+    -webkit-transition: all 0.55s;
+    transition: all 0.55s;
     opacity: 0.7;
   
   }
-  .meals-show li figure img:hover{
+  .meals-section li figure img:hover{
     -webkit-transform: scale(1.03);
     transform: scale(1.03);
     opacity: 1;
   }
   
-  .meals-show figure{
+  .meals-section figure{
       position: relative;
   }
   .btn-white{
@@ -354,7 +354,7 @@ h2::after{
   .btn-white:hover{
     border: 2px solid #EF5411;
   }
-  .port-desc{
+  .meals-image-desc{
     text-align: center;
     position: absolute;
     z-index: 100;
@@ -363,14 +363,14 @@ h2::after{
     left: 0em;
     right: 0em;
     padding-bottom: 2em;
-    transition: all 0.5s;
+    transition: all 0.55s;
     height: 116px;
   
   }
-  .port-desc p{
+  .meals-image-desc p{
     margin: 1em;
   }
-  .meals-show figure:hover .port-desc{
+  .meals-section figure:hover .meals-image-desc{
     bottom: 0em;
   }
   
@@ -780,7 +780,7 @@ footer p {
     font-size: .8rem;
   }
 
-  .meals-show figure:hover .port-desc{
+  .meals-section figure:hover .meals-image-desc{
      bottom: -1.3em;
   }
 
@@ -929,7 +929,7 @@ footer p {
   h2::after{
       width: 150px
   }
-  .port-desc{
+  .meals-image-desc{
       bottom: -12em;
   }
   .btn-white{
@@ -946,7 +946,7 @@ footer p {
 }
 
 @media only screen and (max-width: 850px){
-    .meals-show figure:hover .port-desc{
+    .meals-section figure:hover .meals-image-desc{
         bottom: -3em;
      }
    
@@ -981,7 +981,7 @@ footer p {
 
 @media only screen and (max-width: 760px){
 
-    .port-desc{
+    .meals-image-desc{
         bottom: 0;
         max-height: 80px;
     }
@@ -989,7 +989,7 @@ footer p {
       display: none;
   }
 
-  .meals-show figure:hover .port-desc{
+  .meals-section figure:hover .meals-image-desc{
     bottom: 0;
  }
 
@@ -1029,17 +1029,17 @@ footer p {
 }
 
 @media only screen and (max-width: 620px){
-    .meals-show li{
+    .meals-section li{
         width: 100%;
       }
     .display-none{
         display: none !important;
     }
 
-    .meals-show{
+    .meals-section{
         font-size: 1.3rem;
     }
-    .port-desc{
+    .meals-image-desc{
         padding: 1em 0;
         max-height: 112px;
     }
