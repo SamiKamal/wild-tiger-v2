@@ -203,7 +203,7 @@ header::after{
 }
 
 .btn-orange:hover{
-    background-color: #fff;
+    background-color: transparent;
     color: #EF5411;
     border: 2px solid #EF5411;
 }
